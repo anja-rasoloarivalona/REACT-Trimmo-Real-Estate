@@ -1,0 +1,32 @@
+:root {
+
+  /* FONT */
+  --defaultFont: sans-serif;
+
+  /* COLOR */ 
+  --color-white : #fff;
+  
+
+
+  /* SHADOW */
+
+  --shadow: 0 1rem .5rem rgba(#080808, .9)
+  
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  box-sizing: border-box;
+  font-family: var(--defaultFont);
+}
