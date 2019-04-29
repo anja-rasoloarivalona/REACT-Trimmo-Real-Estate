@@ -1,5 +1,6 @@
 .Layout  {
     display: grid;
     grid-template-columns: 1fr 87vw 1fr;
-    grid-template-rows: 11rem calc(100vh - 11rem);
+    grid-template-rows: 11rem calc(100vh - 11rem) max-content;
+    grid-auto-rows: max-content;
 }
