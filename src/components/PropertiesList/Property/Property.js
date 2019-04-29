@@ -13,7 +13,7 @@ import bath from '../../../assets/icon/SVG/shower.svg';
 import location from '../../../assets/icon/SVG/location.svg';
 
 
-const property = () => {
+const property = (props) => {
   return (
     <section className={classes.Property}>
 
@@ -21,43 +21,44 @@ const property = () => {
             style={{backgroundImage: "url(" + bg + ")",
             backgroundPosition: "center",
             backgroundSize: "cover"}}>
+            
             <ReactSVG src={heart} className={classes.Icon}/>
             <div className={classes.Price}>
-                <span>$25 000 000</span>
+                <span>{props.price}</span>
             </div>
         </div>
 
         <div className={classes.TitleContainer}>
-            <span className={classes.Title}>Beautiful family house</span>
+            <span className={classes.Title}>{props.title}</span>
         </div>
 
         <div className={classes.Details}>
 
             <div className={classes.DetailsInfo}>
                 <ReactSVG src={bed} className={classes.Icon}/>
-                <div className={classes.DetailsInfoText}>2 Beds</div>
+                <div className={classes.DetailsInfoText}>{props.numBeds} Beds</div>
             </div>
 
             <div className={classes.DetailsInfo}>
                 <ReactSVG src={bath} className={classes.Icon}/>
-                <div className={classes.DetailsInfoText}>2 Baths</div>
+                <div className={classes.DetailsInfoText}>{props.numBaths} Baths</div>
             </div>
 
             <div className={classes.DetailsInfo}>
                 <ReactSVG src={garage} className={classes.Icon}/>
-                <div className={classes.DetailsInfoText}>1 Garage</div>
+                <div className={classes.DetailsInfoText}>{props.numbGarage} Garage</div>
             </div>
 
             <div className={classes.DetailsInfo}>
                 <ReactSVG src={home} className={classes.Icon}/>
-                <div className={classes.DetailsInfoText}>550 Sq Ft</div>
+                <div className={classes.DetailsInfoText}>{props.surface} Sq Ft</div>
             </div>
        
         </div>
 
         <div className={classes.Adress}>
             <ReactSVG src={location} className={classes.AdressIcon}/>
-            <div>5721 avenue Saint-André, Montréal QC, H2J 4G3</div>
+            <div>{props.fullAdress}</div>
         </div>
 
     </section>
