@@ -7,6 +7,10 @@
     flex-direction: column;
     align-items: center;
     padding: 0 1rem;
+    
+    position: absolute;
+    top: 6rem;
+    right: 13rem;
 }
 
 .Title {
