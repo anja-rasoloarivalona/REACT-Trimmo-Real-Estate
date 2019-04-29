@@ -66,6 +66,25 @@
 
 
 .Nav {
-    background: red;
+    background: var(--color-white);
     height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
+
+.NavList {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 50%;
+
+}
+
+.Link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+

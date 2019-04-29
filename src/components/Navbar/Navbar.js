@@ -3,6 +3,8 @@ import classes from './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import ReactSVG from 'react-svg';
 
+import logo from '../../assets/img/logo.png';
+
 import phone from '../../assets/icon/SVG/phone.svg';
 import mail from '../../assets/icon/SVG/envelop.svg';
 import user from '../../assets/icon/SVG/user.svg';
@@ -58,7 +60,8 @@ const navbar = () => {
                 
         
         <nav className={classes.Nav}>
-            <li>
+            <img className={classes.Logo} alt="Logo" src={logo}/>
+            <li className={classes.NavList}>
                 <NavLink  to='/' className={classes.Link}>
                     Home
                 </NavLink >
