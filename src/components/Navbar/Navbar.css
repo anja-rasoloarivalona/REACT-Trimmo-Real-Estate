@@ -1,14 +1,69 @@
 .NavbarContainer {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
-
 }
 
-.Contact {
-    background: blue;
+.NavTop{
+    background: var(--color-secondary);
+    color: var(--color-white);
     height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Contact, .User, .SocialMedia {
+    display: flex;
+    align-items: center;
+}
+
+.NavTopItem {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    padding: 0 2.5rem;   
+}
+
+.NavTopText {
+    padding-left: .7rem;
+    font-size: 1.1rem;
+}
+
+.NavTopTextContact {
+    padding-left: .7rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+
+
+.Icon div svg {
+    width: 1.5rem;
+    object-fit: cover;
+    fill: var(--color-primary);
+}
+
+.SocialMedia {
+    display: flex;
+    align-items: center;
+}
+
+.SocialIcon {
+    margin: 0 .8rem;
 
 }
+.SocialIcon div svg {
+    width: 1.5rem;
+    object-fit: cover;
+    fill: var(--color-white);
+}
+
+
+
+
+
+
+
 
 .Nav {
     background: red;

@@ -1,7 +1,7 @@
 :root {
 
   /* FONT */
-  --defaultFont: sans-serif;
+  --defaultFont: 'Poppins', sans-serif;
 
   /* COLOR */ 
   --color-white : #F9F7F6;
