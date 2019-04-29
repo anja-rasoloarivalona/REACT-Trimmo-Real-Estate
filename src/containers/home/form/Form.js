@@ -9,7 +9,8 @@ import classes from './Form.css';
       <form className={classes.Form}>
 
         {/*<div className={classes.Location + ' ' + classes.Input}>*/}  
-
+        <h1 className={classes.Title}>Find your dream home</h1>
+        
         <div className={classes.Input + ' ' + classes.Location}>
             <label htmlFor={classes.Location}>Location</label>
             <select className={classes.InputField}>
