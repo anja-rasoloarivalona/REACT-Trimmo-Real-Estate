@@ -1,4 +1,16 @@
 .NavbarContainer {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
+
+}
+
+.Contact {
+    background: blue;
+    height: 4rem;
+
+}
+
+.Nav {
+    background: red;
+    height: 7rem;
 }
