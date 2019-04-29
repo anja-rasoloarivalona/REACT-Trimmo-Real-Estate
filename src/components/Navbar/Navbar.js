@@ -6,7 +6,7 @@ import ReactSVG from 'react-svg';
 import phone from '../../assets/icon/SVG/phone.svg';
 import mail from '../../assets/icon/SVG/envelop.svg';
 import user from '../../assets/icon/SVG/user.svg';
-import pencil from '../../assets/icon/SVG/pencil.svg';
+import pencil from '../../assets/icon/SVG/edit-pencil.svg';
 import facebook from '../../assets/icon/SVG/facebook.svg';
 import twitter from '../../assets/icon/SVG/twitter.svg';
 import linkedin from '../../assets/icon/SVG/linkedin2.svg';
