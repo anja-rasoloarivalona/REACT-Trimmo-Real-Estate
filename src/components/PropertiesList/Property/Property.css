@@ -1,0 +1,13 @@
+.Property {
+    width: 32rem;
+    height: 45rem;
+    background: grey;
+
+    
+    transform: translate(40rem, 6rem);
+    margin-bottom: 3rem;
+  
+
+    display: grid;
+    grid-template-rows: 1fr 3rem 1fr 3rem;
+}

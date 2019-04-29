@@ -14,3 +14,15 @@ Single-colored icons can be modified like so:
   color: red;
 }
 ========================================== */
+
+.icon-home {
+  width: 0.9285714285714285em;
+}
+
+.icon-automobile {
+  width: 1.1428571428571428em;
+}
+
+.icon-shower {
+  width: 1.0714285714285714em;
+}

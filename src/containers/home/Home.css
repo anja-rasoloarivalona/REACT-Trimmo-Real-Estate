@@ -1,4 +1,6 @@
 .Home {
     grid-column: 1 / -1;
     position: relative;
+    width: 100vw;
+    
 }
