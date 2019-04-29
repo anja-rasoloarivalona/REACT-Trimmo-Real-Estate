@@ -21,6 +21,9 @@ class Home extends Component {
         <section className={classes.Properties}>
             <Property />
         </section>
+        <section className={classes.test}>
+          test
+        </section>
       </React.Fragment>
     
     )

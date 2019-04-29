@@ -22,6 +22,9 @@ const property = () => {
             backgroundPosition: "center",
             backgroundSize: "cover"}}>
             <ReactSVG src={heart} className={classes.Icon}/>
+            <div className={classes.Price}>
+                <span>$25 000 000</span>
+            </div>
         </div>
 
         <div className={classes.TitleContainer}>
@@ -32,28 +35,28 @@ const property = () => {
 
             <div className={classes.DetailsInfo}>
                 <ReactSVG src={bed} className={classes.Icon}/>
-                <div>2 Beds</div>
+                <div className={classes.DetailsInfoText}>2 Beds</div>
             </div>
 
             <div className={classes.DetailsInfo}>
                 <ReactSVG src={bath} className={classes.Icon}/>
-                <div>2 Baths</div>
+                <div className={classes.DetailsInfoText}>2 Baths</div>
             </div>
 
             <div className={classes.DetailsInfo}>
                 <ReactSVG src={garage} className={classes.Icon}/>
-                <div>1 Garage</div>
+                <div className={classes.DetailsInfoText}>1 Garage</div>
             </div>
 
             <div className={classes.DetailsInfo}>
                 <ReactSVG src={home} className={classes.Icon}/>
-                <div>550 Sq Ft</div>
+                <div className={classes.DetailsInfoText}>550 Sq Ft</div>
             </div>
        
         </div>
 
         <div className={classes.Adress}>
-            <ReactSVG src={location} className={classes.Icon}/>
+            <ReactSVG src={location} className={classes.AdressIcon}/>
             <div>5721 avenue Saint-André, Montréal QC, H2J 4G3</div>
         </div>
 
