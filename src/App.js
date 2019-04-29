@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
+
+
 import './App.css';
+
+import Layout from './components/Layout/Layout';
+
+
+
 
 
 
@@ -7,9 +14,14 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div>
-           Hello from App
-      </div>
+
+      <Layout>
+            <Navbar />
+              <Route exact path="/" component={Home}></Route>
+              <Route path="/about" component={About}></Route>
+              <Route path="/properties" component={Properties}></Route>
+
+      </Layout>
     )
   }
 }

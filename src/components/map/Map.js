@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from './node_modules/react';
 import classes from './Map.css';
-import { connect } from 'react-redux';
+import { connect } from './node_modules/react-redux';
 
 class Map extends Component {
 
