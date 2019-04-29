@@ -22,18 +22,26 @@ class Map extends Component {
 
         let markerInfos = [...this.props.products];
 
-        markerInfos.map(item => {      
-          return (
-            new window.google.maps.Marker({
-              position: {lat: item.lat, lng: item.lng},
-              map: map
-              })
-          )
+        // Create an InfoWindow
+        let infoWindow = new window.google.maps.InfoWindow()
 
+        //Display markers dynamically
+        markerInfos.map(item => {             
+            
+              // Creata a Marker
+              let marker = new window.google.maps.Marker({
+                    position: {lat: item.lat, lng: item.lng},
+                    map: map,
+                    title: "Hello"
+                  })
+
+              // Open InfowWindow on click
+              marker.addListener('click', () => {
+                infoWindow.setContent(item.infoWindow)
+                infoWindow.open(map, marker);
+                  })
+          
         })
-
-        
-
 
     }
 
