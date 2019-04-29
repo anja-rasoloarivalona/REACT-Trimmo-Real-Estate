@@ -4,7 +4,10 @@
   --defaultFont: sans-serif;
 
   /* COLOR */ 
-  --color-white : #fff;
+  --color-white : #F9F7F6;
+  --color-primary: #C69963;
+  --color-secondary: #101D2C;
+  --color-grey: #B2B2B2;
   
 
 
