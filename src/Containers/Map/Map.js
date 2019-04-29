@@ -1,34 +1,44 @@
-import React from "react";
-import { compose, withProps } from "recompose";
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps";
+import React, { Component } from 'react';
+import classes from './Map.css';
 import { connect } from 'react-redux';
 
-const Map = compose(
+class Map extends Component {
 
-  withProps({
-    googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDRoF3AQcn0aoVUEHOUwoQnWlgf-m60GWs&v=3.exp&libraries=geometry,drawing,places",
-    loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `400px`, margin: `50px`}} />,
-    mapElement: <div style={{ height: `100%` }} />,
-  }),
-  withScriptjs,
-  withGoogleMap
-) ((props) =>
+  componentDidMount() {
+    this.renderMap()
+  };
 
-  <GoogleMap
-    defaultZoom={12}
-    defaultCenter={{ lat: 45.50884, lng: -73.58781 }}>
+  renderMap = () => {
+    this.loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyDRoF3AQcn0aoVUEHOUwoQnWlgf-m60GWs&callback=initMap")
+    window.initMap = this.initMap;
+  }
 
-    {props.products.map( item => {
-      return (
-        <Marker  position={{lat: item.lat, lng: item.lng}}
-                 isMarkersShown={props.isMarkerShown}
-        /> )
-    })}
+  initMap = () => {
+   const map = new window.google.maps.Map(document.getElementById('map'), {
+     center: {lat: -34.389, lng: 150.644},
+     zoom: 12
+   })
+  }
+
+    loadScript = (url) => {
+    let index = window.document.getElementsByTagName("script")[0];
+    let script = window.document.createElement("script");
+    script.src = url
+    script.async = true;
+    script.defer = true;
+    index.parentNode.insertBefore(script, index);
+  }
 
 
-  </GoogleMap>
-)
+  render() {
+    return (
+        <section>
+            <div id="map" className={classes.Map}></div>
+        </section>
+    )
+  }
+
+};
 
 const mapStateToProps = state => {
   return {
@@ -38,4 +48,18 @@ const mapStateToProps = state => {
 
 
 export default connect(mapStateToProps)(Map);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
