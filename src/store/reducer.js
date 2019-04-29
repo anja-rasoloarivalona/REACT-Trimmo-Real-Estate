@@ -1,13 +1,13 @@
 import * as actionTypes from './actions';
-import {products} from './data';
+import {products} from '../data';
 
 const initialState = {
     products: products,
 }
 
 
-const reducer =(state = initialState, action) => {
-
+const reducer = (state = initialState, action) => {
+    return state;
 }
 
 
