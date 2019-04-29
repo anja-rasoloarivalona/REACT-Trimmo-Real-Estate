@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-
-
+import { Route } from 'react-router-dom';
 import './App.css';
 
+import Navbar from './components/Navbar/Navbar';
 import Layout from './components/Layout/Layout';
 
+import Home from './containers/home/Home';
+import About from './containers/About/About';
+import Properties from './containers/Properties/Properties';
 
 
 
