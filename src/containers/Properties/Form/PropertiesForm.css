@@ -1,0 +1,49 @@
+.Form {
+    margin: 2rem;
+    background: rgba(16, 29, 44, 0.801);
+    height: 60vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    
+    position: absolute;
+    top: 6rem;
+    right: 13rem;
+}
+
+.Title {
+    grid-row: 1 / 2;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    color: var(--color-primary);
+}
+.InputField {
+    width: 17rem;
+    height: 3.7rem;
+    border-radius: 1px;
+    border: none;
+    padding-left: .5rem;
+    outline: none;
+}
+
+.InputField:focus {
+    border: 2px solid var(--color-primary);
+
+}
+
+.Input {
+    height: 5rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .5rem 0;  
+}
+
+.Input label {
+    font-size: 1.2rem;
+    color: var(--color-white);    
+}
