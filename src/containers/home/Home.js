@@ -45,12 +45,12 @@ class Home extends Component {
                 backgroundPosition: "center",
                 backgroundSize: "cover"}}>
 
-          <div className={classes.AddInfo}>
+          <div className={classes.AddInfo1}>
             <div>FIND YOUR</div>
             <div>DREAM HOME</div>
           </div>
 
-          <div className={classes.AddInfo}>
+          <div className={classes.AddInfo2}>
             <div>WE ARE READY TO RECEIVE YOUR CALL</div>
             <div>+1 514 123 1234</div>
           </div>
