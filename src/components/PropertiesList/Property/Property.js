@@ -36,12 +36,12 @@ const property = (props) => {
 
             <div className={classes.DetailsInfo}>
                 <ReactSVG src={bed} className={classes.Icon}/>
-                <div className={classes.DetailsInfoText}>{props.numBeds} Beds</div>
+                <div className={classes.DetailsInfoText}>{props.numbBeds} Beds</div>
             </div>
 
             <div className={classes.DetailsInfo}>
                 <ReactSVG src={bath} className={classes.Icon}/>
-                <div className={classes.DetailsInfoText}>{props.numBaths} Baths</div>
+                <div className={classes.DetailsInfoText}>{props.numbBaths} Baths</div>
             </div>
 
             <div className={classes.DetailsInfo}>

@@ -4,7 +4,7 @@ import classes from './Home.css';
 import Form from './form/Form';
 import bg from '../../assets/img/bg.jpg';
 
-import Property from '../../components/PropertiesList/Property/Property';
+import PropertiesList from '../../components/PropertiesList/PropertiesList';
 
 
 class Home extends Component {
@@ -19,10 +19,7 @@ class Home extends Component {
             <Form />
         </section> 
         <section className={classes.Properties}>
-            <Property />
-        </section>
-        <section className={classes.test}>
-          test
+            <PropertiesList />
         </section>
       </React.Fragment>
     

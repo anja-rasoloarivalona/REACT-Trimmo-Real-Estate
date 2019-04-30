@@ -1,0 +1,12 @@
+.PropertiesList {
+    display: grid;
+    grid-template-columns: repeat(3,max-content);
+    grid-auto-rows: max-content;
+    grid-gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    
+    background: red;
+    height: 100%;
+    
+}
