@@ -59,9 +59,11 @@
 .PropertiesContainer {
     grid-column: 2 / 3;
     display: grid;
+    
 }
 
 .MapContainer {
     padding: 0 10.5rem;
+    margin: 3rem 0;
 }
 
