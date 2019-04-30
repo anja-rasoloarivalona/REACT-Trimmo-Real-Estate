@@ -278,7 +278,105 @@
 
 .Agent {
     height: 100vh;
+    width: 100%;
     grid-column: 2/ 3;
     grid-row: 7 / 8;
+    padding: 5rem 0;
+}
+
+.AgentTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.AgentTitle div span {
+    margin: 0 .5rem;
+}
+
+.AgentTitle div span:first-child {
+    color: var(--color-secondary);
+}
+
+.AgentTitle div span:last-child {
+    color: var(--color-primary);
+}
+
+.AgentTitleLine {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.AgentTitleLine hr {
+    border: none;
+}
+
+.AgentTitleLine hr:first-child, .AgentTitleLine hr:last-child{
+    height: 1px;
+    background: var(--color-primary);
+    width: 5rem;
+}
+
+.AgentTitleLine hr:nth-child(2) {
+    height: .6rem;
+    background: var(--color-primary);
+    width: 6rem;
+}
+
+.AgentTitlePara {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.Realtor {
+    display: flex;
+    align-items: center;
+    margin-top: 9rem;
+}
+
+.RealtorContent {
+    margin: 0 3rem;
+    width: 26rem;
+    
+}
+
+.RealtorImg {
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.RealtorDetails {
+    width: 100%;
+    height: 8rem;
+    background: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-10%);
+    border-radius: 3px;
+    
+}
+
+.RealtorDetails div:first-child {
+    font-size: 2.6rem;
+    font-weight: 400;
+    color: var(--color-primary);
+    line-height: 1;
 
 }
+
+.RealtorDetails div:last-child {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-white);
+
+}
+
+
