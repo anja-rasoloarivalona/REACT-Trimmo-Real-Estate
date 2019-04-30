@@ -213,6 +213,23 @@ class Home extends Component {
             </section>
 
         </section>
+        
+        <section className={classes.Testimonial}>
+              <div className={classes.TestimonialIntro}>
+                  <div className={classes.TestimonialIntroTitle}>
+                      <div>OUR</div>
+                      <div>TESTIMONIAL</div>
+                  </div>
+                  <div className={classes.TestimonialTitleLine}>
+                      <hr />
+                      <hr />
+                  </div>
+                  <p className={classes.TestimonialIntroPara}>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum totam et dolores voluptatem porro tempore temporibus ducimus
+                  </p>
+              </div>
+        </section>
+
       </React.Fragment>
 
 
