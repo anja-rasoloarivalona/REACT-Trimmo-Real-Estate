@@ -19,6 +19,10 @@ Single-colored icons can be modified like so:
   width: 0.9285714285714285em;
 }
 
+.icon-cogs {
+  width: 1.0714285714285714em;
+}
+
 .icon-automobile {
   width: 1.1428571428571428em;
 }

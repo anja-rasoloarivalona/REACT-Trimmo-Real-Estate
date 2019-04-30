@@ -3,7 +3,12 @@ import classes from './Home.css';
 import ReactSVG from 'react-svg';
 
 import Form from './form/Form';
+
 import location from '../../assets/icon/SVG/location.svg';
+import cogs from '../../assets/icon/SVG/cogs.svg';
+import key from '../../assets/icon/SVG/key2.svg';
+import lock from '../../assets/icon/SVG/lock-closed.svg';
+
 
 import bg from '../../assets/img/bg.jpg';
 import realtor from '../../assets/img/realtor.png';
@@ -110,9 +115,9 @@ class Home extends Component {
                   </div>
 
                   <div className={classes.AdvantageContentItem}>
-                      <ReactSVG src={location} className={classes.AdvantageIcon}/>
+                      <ReactSVG src={key} className={classes.AdvantageIcon}/>
                       <div>
-                          Various Locations
+                          Best Prices
                       </div>
                       <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt.
@@ -120,9 +125,9 @@ class Home extends Component {
                   </div>
 
                   <div className={classes.AdvantageContentItem}>
-                      <ReactSVG src={location} className={classes.AdvantageIcon}/>
+                      <ReactSVG src={lock} className={classes.AdvantageIcon}/>
                       <div>
-                          Various Locations
+                          Privacy and Security
                       </div>
                       <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt.
@@ -130,14 +135,18 @@ class Home extends Component {
                   </div>
 
                   <div className={classes.AdvantageContentItem}>
-                      <ReactSVG src={location} className={classes.AdvantageIcon}/>
+                      <ReactSVG src={cogs} className={classes.AdvantageIcon}/>
                       <div>
-                          Various Locations
+                          No Commission
                       </div>
                       <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt.
                       </p>
                   </div>
+              </section>
+
+              <section className={classes.Agent}>
+                Agent
 
               </section>
 

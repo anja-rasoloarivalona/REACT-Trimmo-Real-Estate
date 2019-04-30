@@ -237,7 +237,6 @@
 
 
 .AdvantageContent{
-    background: salmon;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,10 +257,28 @@
 
 .AdvantageContentItem p {
     text-align: center;
+    margin-top: 2rem;
 }
 
 .AdvantageIcon {
-    background: red;
-    padding: 1rem;
+    background: var(--color-primary);
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
+    margin-bottom: 1.5rem;
+    fill: var(--color-white);
+}
+
+.AdvantageContentItem div {
+    font-size: 1.3rem;
+}
+
+.Agent {
+    height: 100vh;
+    grid-column: 2/ 3;
+    grid-row: 7 / 8;
+
 }
