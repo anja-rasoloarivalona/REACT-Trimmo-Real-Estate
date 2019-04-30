@@ -54,5 +54,31 @@ export const products = [
         surface: 450,
         fullAdress: "5478 rue Saint-André, Montréal QC, H2J 987",
         infoWindow: 'Propriety 3'
+    },
+    {
+        id:5,
+        lat: 45.53820,
+        lng: -73.537691,
+        title: "Beautiful Family House",
+        price: "25 000 000",
+        numbBeds: 2,
+        numbBathus: 2,
+        numbGarage: 2,
+        surface: 450,
+        fullAdress: "5478 rue Saint-André, Montréal QC, H2J 987",
+        infoWindow: 'Propriety 3'
+    },
+    {
+        id:4,
+        lat: 45.53820,
+        lng: -73.537691,
+        title: "Beautiful Family House",
+        price: "25 000 000",
+        numbBeds: 2,
+        numbBathus: 2,
+        numbGarage: 2,
+        surface: 450,
+        fullAdress: "5478 rue Saint-André, Montréal QC, H2J 987",
+        infoWindow: 'Propriety 3'
     }
 ];

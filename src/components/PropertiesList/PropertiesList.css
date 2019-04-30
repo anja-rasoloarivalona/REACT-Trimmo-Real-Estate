@@ -2,11 +2,10 @@
     display: grid;
     grid-template-columns: repeat(3,max-content);
     grid-auto-rows: max-content;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
     align-items: center;
     justify-items: center;
-    
-    background: red;
-    height: 100%;
+    padding: 4rem 0;
+
     
 }

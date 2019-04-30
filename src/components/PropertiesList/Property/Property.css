@@ -5,8 +5,6 @@
     border-radius: 3px;
     display: grid;
     grid-template-rows: 1.5fr 5rem 1fr 5rem;
-
-    transform: translate(10rem, 6rem);
 }
 
 .Head {
