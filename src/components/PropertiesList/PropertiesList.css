@@ -1,7 +1,8 @@
 .PropertiesList {
     display: grid;
-    grid-template-columns: repeat(3,max-content);
-    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit,32rem);
+    grid-auto-rows: repeat(auto-fit, 45rem);
+    grid-auto-rows: 45rem;
     grid-gap: 3rem;
     align-items: center;
     justify-items: center;
