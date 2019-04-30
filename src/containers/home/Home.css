@@ -1,5 +1,6 @@
 .Home {
     grid-column: 1 / -1;
+    grid-row: 2 / 3;
     position: relative;
     width: 100vw;   
 }
@@ -68,7 +69,15 @@
     grid-row: 4 / 5;
     grid-column: 1 / -1;
     height: 40vh;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
    
+}
+
+.AddInfo {
+    color: white;
 }
 
 
