@@ -5,9 +5,9 @@ import Form from './Form/PropertiesForm';
  class Properties extends Component {
   render() {
     return (
-      <div>
+      <section className={classes.PropertiesContainer}>
           <Form />
-      </div>
+      </section>
     )
   }
 }

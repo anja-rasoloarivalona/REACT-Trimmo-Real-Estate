@@ -1,20 +1,23 @@
 .Form {
-    margin: 2rem;
-    background: rgba(16, 29, 44, 0.801);
-    height: 60vh;
-    width: 25vw;
-    display: flex;
-    flex-direction: column;
+    grid-row: 1 / 2;
+    grid-column: 1/ 4;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40rem);
+    grid-template-rows: repeat(auto-fit, 5rem);
+    grid-auto-rows: 5rem;
+    justify-content: center;
     align-items: center;
-    padding: 0 1rem;
-    
-    position: absolute;
-    top: 6rem;
-    right: 13rem;
+    color: var(--color-primary);
+    background: var(--color-secondary);
+    padding-bottom: 1.5rem;
+
+   
 }
 
 .Title {
     grid-row: 1 / 2;
+    grid-column: 1 / -1;
     text-transform: uppercase;
     text-align: center;
     padding: 1rem;
@@ -35,15 +38,15 @@
 }
 
 .Input {
-    height: 5rem;
-    width: 80%;
+    height: 100%;
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: .5rem 0;  
+    align-items: center;
+    padding: 0 2rem;
 }
 
 .Input label {
     font-size: 1.2rem;
-    color: var(--color-white);    
+    color: var(--color-white);   
 }
