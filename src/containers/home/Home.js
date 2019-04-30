@@ -58,6 +58,19 @@ class Home extends Component {
         </section>
 
         <section className={classes.Properties}>
+            <div className={classes.PropertiesIntro}>
+                <div className={classes.PropertiesIntroTitle}>
+                    <div>AWESOME</div>
+                    <div>PROPERTIES</div>
+                </div>
+                <div className={classes.PropertiesTitleLine}>
+                    <hr />
+                    <hr />
+                </div>
+                <p className={classes.PropertiesIntroPara}>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum totam et dolores voluptatem porro tempore temporibus ducimus
+                </p>
+            </div>
             <PropertiesList />
         </section>
       </React.Fragment>

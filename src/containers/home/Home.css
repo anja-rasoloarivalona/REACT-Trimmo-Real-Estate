@@ -122,13 +122,64 @@
     letter-spacing: 2px;
 }
 
-
-
 .Properties {
     grid-column: 2 / 3;
     grid-row: 5 / 6;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    margin-top: 6rem;
 }
 
+.PropertiesIntro {
+    transform: translateX(8.5rem);
+    margin-bottom: 6rem;
+}
+
+
+.PropertiesIntroTitle {
+    display: flex;
+    justify-content: space-between;
+    font-size: 4rem;
+    margin: 2rem 1rem;
+    width: 38%;
+    font-weight: 600;
+    
+}
+
+.PropertiesIntroTitle div:first-child {
+    color: var(--color-secondary);
+}
+
+.PropertiesIntroTitle div:first-child {
+    color: var(--color-primary);
+}
+
+.PropertiesTitleLine {
+    display: flex;
+    align-items: center;
+    margin-left: 1.2rem;
+    transform: translateY(-100%);
+}
+
+.PropertiesTitleLine hr:first-child {
+    width: 5rem;
+    height: 1rem;
+    background: var(--color-primary);
+    border: none;
+}
+
+
+.PropertiesTitleLine hr:nth-child(2) {
+    width: 7rem;
+    height: .1rem;
+    background: var(--color-primary);
+    border: none;
+}
+
+.PropertiesIntroPara {
+    margin-left: 1.2rem;
+    font-size: 1.3rem;
+    width: 45%;
+    line-height: 1.5;
+
+}
