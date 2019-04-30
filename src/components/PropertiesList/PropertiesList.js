@@ -15,7 +15,7 @@ class PropertiesList extends Component {
                         numbBeds={item.numbBeds}
                         numbBaths={item.numbBaths}
                         numbGarage={item.numbGarage}
-                        surface={item.price}
+                        surface={item.surface}
                         fullAdress={item.fullAdress}
                         />}       
                 )}
