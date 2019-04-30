@@ -1,4 +1,4 @@
-.PropertiesContainer {
+.Properties {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
     height: 100vh;
@@ -6,5 +6,58 @@
     display: grid;
     grid-template-columns: 1fr 90vw 1fr;
     grid-template-rows:  max-content;
-    grid-auto-rows: max-content;
+    grid-auto-rows: max-content;  
 }
+
+
+.PropertiesTitleContainer {
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    margin: 2rem 1rem;
+    width: 100%;
+    font-weight: 600;  
+    transform: translateX(7.7%);
+    margin-top: 6rem;
+}
+
+.PropertiesTitle {
+    display: flex;
+}
+
+.PropertiesTitle div:first-child {
+    color: var(--color-secondary);
+    margin-right: 1rem;
+   
+}
+
+.PropertiesTitle div:first-child {
+    color: var(--color-primary);
+}
+
+.PropertiesTitleLine {
+    display: flex;
+    align-items: center;
+
+}
+
+.PropertiesTitleLine hr:first-child {
+    width: 5rem;
+    height: 1rem;
+    background: var(--color-primary);
+    border: none;
+}
+
+
+.PropertiesTitleLine hr:nth-child(2) {
+    width: 7rem;
+    height: .1rem;
+    background: var(--color-primary);
+    border: none;
+}
+
+.PropertiesContainer {
+    grid-column: 2 / 3;
+    display: grid;
+}
+
