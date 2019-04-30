@@ -194,13 +194,74 @@
     background: var(--color-primary);
     color: var(--color-white);
     margin-top: 3rem;
+    margin-bottom: 9rem;
     cursor: pointer;
 
 }
 
-.Next {
-    background: blue;
-    height: 50vh;
-    grid-column: 2 / 3;
+.Advantage {
+    height: 75vh;
+    grid-column: 1 / -1;
     grid-row: 6 / 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.AdvantageTitle {
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.AdvantageTitle span {
+    margin: 0 1rem;
+}
+
+
+.AdvantageTitle span:first-child {
+    color: var(--color-primary);
+}
+
+.Advantage span:nth-child(2) {
+    color: var(--color-white);
+}
+
+.AdvantagePara {
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+    color: var(--color-white);
+}
+
+
+.AdvantageContent{
+    background: salmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.AdvantageContentItem {
+    width: 25rem;
+    height: 24rem;
+    background: var(--color-white);
+    margin: 0 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.AdvantageContentItem p {
+    text-align: center;
+}
+
+.AdvantageIcon {
+    background: red;
+    padding: 1rem;
+    border-radius: 50%;
 }

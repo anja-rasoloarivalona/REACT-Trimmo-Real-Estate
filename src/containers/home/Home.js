@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import classes from './Home.css';
+import ReactSVG from 'react-svg';
 
 import Form from './form/Form';
+import location from '../../assets/icon/SVG/location.svg';
+
 import bg from '../../assets/img/bg.jpg';
 import realtor from '../../assets/img/realtor.png';
 
@@ -77,10 +80,71 @@ class Home extends Component {
             </div>
         </section>
 
-        <section className={classes.Next}>
-            next
+
+        <section className={classes.Advantage}
+                  style={{backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(" + bg + ")",
+                  backgroundPosition: "center",
+                  backgroundSize: "cover"}}>
+              <div className={classes.AdvantageTitle}>
+                  <span>
+                      OUR 
+                  </span>
+                  <span>
+                    ADVANTAGES
+                  </span>
+              </div>
+              <span className={classes.AdvantagePara}>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              </span>
+
+              <section className={classes.AdvantageContent}>
+
+                  <div className={classes.AdvantageContentItem}>
+                      <ReactSVG src={location} className={classes.AdvantageIcon}/>
+                      <div>
+                          Various Locations
+                      </div>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt.
+                      </p>
+                  </div>
+
+                  <div className={classes.AdvantageContentItem}>
+                      <ReactSVG src={location} className={classes.AdvantageIcon}/>
+                      <div>
+                          Various Locations
+                      </div>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt.
+                      </p>
+                  </div>
+
+                  <div className={classes.AdvantageContentItem}>
+                      <ReactSVG src={location} className={classes.AdvantageIcon}/>
+                      <div>
+                          Various Locations
+                      </div>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt.
+                      </p>
+                  </div>
+
+                  <div className={classes.AdvantageContentItem}>
+                      <ReactSVG src={location} className={classes.AdvantageIcon}/>
+                      <div>
+                          Various Locations
+                      </div>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt.
+                      </p>
+                  </div>
+
+              </section>
+
         </section>
       </React.Fragment>
+
+
     
     )
   }
