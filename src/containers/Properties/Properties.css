@@ -61,3 +61,7 @@
     display: grid;
 }
 
+.MapContainer {
+    padding: 0 10.5rem;
+}
+

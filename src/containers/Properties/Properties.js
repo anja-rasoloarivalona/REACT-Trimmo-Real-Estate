@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classes from './Properties.css';
 import Form from './Form/PropertiesForm';
 import PropertiesList from '../../components/PropertiesList/PropertiesList';
+import Map from '../../components/Map/Map';
 
  class Properties extends Component {
   render() {
@@ -19,6 +20,10 @@ import PropertiesList from '../../components/PropertiesList/PropertiesList';
                         <hr/>
                     </div>
               </div>
+              <div className={classes.MapContainer}>
+                <Map />
+              </div>
+              
               <PropertiesList />
             </section>
           
