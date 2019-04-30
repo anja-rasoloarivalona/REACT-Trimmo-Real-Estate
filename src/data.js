@@ -44,8 +44,8 @@ export const products = [
 
     {
         id:4,
-        lat: 45.53820,
-        lng: -73.537691,
+        lat: 45.47820,
+        lng: -73.367691,
         title: "Beautiful Family House",
         price: "25 000 000",
         numbBeds: 2,
@@ -57,8 +57,8 @@ export const products = [
     },
     {
         id:5,
-        lat: 45.53820,
-        lng: -73.537691,
+        lat: 45.43820,
+        lng: -73.337691,
         title: "Beautiful Family House",
         price: "25 000 000",
         numbBeds: 2,
@@ -69,9 +69,9 @@ export const products = [
         infoWindow: 'Propriety 3'
     },
     {
-        id:4,
+        id:6,
         lat: 45.53820,
-        lng: -73.537691,
+        lng: -73.737691,
         title: "Beautiful Family House",
         price: "25 000 000",
         numbBeds: 2,
