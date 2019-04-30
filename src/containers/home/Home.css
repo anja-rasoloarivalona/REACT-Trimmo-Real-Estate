@@ -181,5 +181,26 @@
     font-size: 1.3rem;
     width: 45%;
     line-height: 1.5;
+}
 
+.PropertiesCTA {
+    align-self: center;
+}
+
+.PropertiesCTA button {
+    border: none;
+    padding: 1.5rem 2rem;
+    outline: none;
+    background: var(--color-primary);
+    color: var(--color-white);
+    margin-top: 3rem;
+    cursor: pointer;
+
+}
+
+.Next {
+    background: blue;
+    height: 50vh;
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
 }

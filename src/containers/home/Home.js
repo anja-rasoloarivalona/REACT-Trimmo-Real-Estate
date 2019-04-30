@@ -72,6 +72,13 @@ class Home extends Component {
                 </p>
             </div>
             <PropertiesList />
+            <div className={classes.PropertiesCTA}>
+                <button>MORE PROPERTIES</button>
+            </div>
+        </section>
+
+        <section className={classes.Next}>
+            next
         </section>
       </React.Fragment>
     
