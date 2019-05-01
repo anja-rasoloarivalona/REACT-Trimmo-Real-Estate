@@ -14,7 +14,7 @@ class Details extends Component {
       <div className={classes.Details}>
     
                       
-      {<Property 
+      <Property 
       
                 key={this.props.requestedProduct.id}
                 price ={this.props.requestedProduct.price}
@@ -25,7 +25,7 @@ class Details extends Component {
                 surface={this.props.requestedProduct.surface}
                 id={this.props.requestedProduct.id}
                 fullAdress={this.props.requestedProduct.fullAdress}
-        />}
+        />
                 
       </div>
 

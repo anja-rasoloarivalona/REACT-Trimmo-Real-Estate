@@ -8,7 +8,13 @@
 }
 
 .Head {
-    position: relative
+    position: relative;
+    height: 100%;
+}
+
+.Link {
+    text-decoration: none;
+    height: 100%;
 }
 
 .Head div svg {

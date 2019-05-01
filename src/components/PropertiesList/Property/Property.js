@@ -18,18 +18,18 @@ const property = (props) => {
     <section className={classes.Property}
             onClick={props.requestedDetail}>
 
-        <Link to={`/details/${props.id}`}>
-        <div className={classes.Head}
-            style={{backgroundImage: "url(" + bg + ")",
-            backgroundPosition: "center",
-            backgroundSize: "cover"}}>
-        
-            
-            <ReactSVG src={heart} className={classes.Icon}/>
-            <div className={classes.Price}>
-                <span>{props.price}</span>
-            </div>
-        </div>
+        <Link to={`/details/${props.id}`} className={classes.Link}>
+                <div className={classes.Head}
+                    style={{backgroundImage: "url(" + bg + ")",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover"}}>
+                
+                    
+                    <ReactSVG src={heart} className={classes.Icon}/>
+                    <div className={classes.Price}>
+                        <span>{props.price}</span>
+                    </div>
+                </div>
         </Link>
 
 
