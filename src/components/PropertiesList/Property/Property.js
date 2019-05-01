@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Property.css';
 import ReactSVG from 'react-svg';
-
+import { Link } from 'react-router-dom';
 
 import bg from '../../../assets/img/bg.jpg';
 
@@ -15,18 +15,23 @@ import location from '../../../assets/icon/SVG/location.svg';
 
 const property = (props) => {
   return (
-    <section className={classes.Property}>
+    <section className={classes.Property}
+            onClick={props.requestedDetail}>
 
+        <Link to={`/details/${props.id}`}>
         <div className={classes.Head}
             style={{backgroundImage: "url(" + bg + ")",
             backgroundPosition: "center",
             backgroundSize: "cover"}}>
+        
             
             <ReactSVG src={heart} className={classes.Icon}/>
             <div className={classes.Price}>
                 <span>{props.price}</span>
             </div>
         </div>
+        </Link>
+
 
         <div className={classes.TitleContainer}>
             <span className={classes.Title}>{props.title}</span>

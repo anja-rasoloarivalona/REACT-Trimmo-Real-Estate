@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import classes from './PropertiesList.css';
 import Property from './Property/Property';
 
+import * as actionTYpes from '../../store/actions';
+
 class PropertiesList extends Component {
   render() {
       let myproperties = [...this.props.properties];    
@@ -16,8 +18,9 @@ class PropertiesList extends Component {
                         numbBaths={item.numbBaths}
                         numbGarage={item.numbGarage}
                         surface={item.surface}
+                        id={item.id}
                         fullAdress={item.fullAdress}
-                        />}       
+                        requestedDetail={() => this.props.onRequestedId(item.id)}/>}       
                 )}
              </div>   )
           }
@@ -25,8 +28,15 @@ class PropertiesList extends Component {
  
 const mapStateToProps = state => {
     return  {
-        properties: state.products
+        properties: state.products,
+        requestedProduct: state.requestedProduct
     }
 }
 
-export default connect(mapStateToProps)(PropertiesList);
+const mapDispatchToProps = dispatch => {
+    return {
+        onRequestedId: (item) => dispatch({type: actionTYpes.GET_ITEM, payload: item})
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(PropertiesList);

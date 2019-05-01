@@ -78,7 +78,7 @@ export const products = [
         numbBathus: 2,
         numbGarage: 2,
         surface: 450,
-        fullAdress: "5478 rue Saint-André, Montréal QC, H2J 987",
+        fullAdress: "CONGRATS",
         infoWindow: 'Propriety 3'
     }
 ];

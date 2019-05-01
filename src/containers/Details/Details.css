@@ -1,0 +1,6 @@
+.Details {
+    grid-row: 2 / 3;
+    font-size: 5rem;
+    background: red;
+    grid-column: 2 / 3;
+}
