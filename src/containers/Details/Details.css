@@ -24,3 +24,28 @@
     padding: 1rem 2rem;
     background: var(--color-secondary);
 }
+
+.Main {
+    height: 80vh;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background: orange;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Gallery {
+    width: 60%;
+    height: 80%;
+    background: blue;
+}
+
+.Summary {
+    width: 30%;
+    height: 80%;
+    background: red;
+}

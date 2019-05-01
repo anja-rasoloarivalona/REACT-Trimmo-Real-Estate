@@ -25,6 +25,16 @@ class Details extends Component {
               </div>
               <Form />
           </section>
+
+          <section className={classes.Main}>
+              <section className={classes.Gallery}>
+                    Gallery
+              </section>
+              <section className={classes.Summary}>
+                    Summary
+              </section>
+
+          </section>
     
                       
   
