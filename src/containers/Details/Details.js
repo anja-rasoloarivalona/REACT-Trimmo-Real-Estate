@@ -6,6 +6,8 @@ import Form from './DetailsForm/DetailsForm';
 import bg from '../../assets/img/bg.jpg';
 import Gallery from './Gallery/Gallery';
 
+import map from '../../assets/img/map.jpg';
+
 
 
 class Details extends Component {
@@ -67,11 +69,38 @@ class Details extends Component {
                               <div>1</div>
                         </div>
                     </div>
-
-
               </section>
-
           </section>
+
+              <section className = {classes.PropertyDetail}>
+
+                <section className={classes.Desc}> 
+                      <div className={classes.DescTitleContainer}>
+                          <div className={classes.DescTitle}>
+                                <div>PROPERTY</div>
+                                <div>DESCRIPTION</div>
+                          </div>
+                          <div className={classes.DescTitleLine}>
+                                <hr/>
+                                <hr/>
+                        </div>
+                      </div>
+                      <div className = {classes.PropertyDetailPara}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum, bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt. Duis euismod placerat rhoncus. Phasellus mollis imperdiet placerat. Sed ac turpis nisl. Mauris at ante mauris. Aliquam posuere fermentum lorem, a aliquam mauris rutrum a. Curabitur sit amet pretium lectus, nec consequat orci.
+                      </div>
+                      <div className = {classes.PropertyDetailPara}>
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis et metus in libero sollicitudin venenatis eu sed enim. Nam felis lorem, suscipit ac nisl ac, iaculis dapibus tellus. Cras ante justo, aliquet quis placerat nec, molestie id turpis. Cras at tincidunt magna. Mauris aliquam sem sit amet dapibus venenatis. Sed metus orci, tincidunt sed fermentum non, ornare non quam. Aenean nec turpis at libero lobortis pretium.
+                      </div>
+                </section>
+
+                <section className={classes.FloorPlan}>
+                      <img src={map} alt="floor" className={classes.FloorPlanImg} />
+                </section>
+       </section>
+
+           <section className={classes.PropertyFeatures}>
+                      features
+            </section>
     
                       
   

@@ -6,6 +6,7 @@
     grid-template-columns: 1fr 90vw 1fr;
     grid-template-rows: max-content;
     grid-auto-rows: max-content;
+    
 }
 
 .Header {
@@ -29,10 +30,7 @@
     height: 80vh;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    
-
     display: flex;
-
     align-items: center;
     justify-content: center;
 }
@@ -118,4 +116,87 @@
     height: .1rem;
     background: var(--color-primary);
     border: none;
+}
+
+.PropertyDetail {
+    height: 50vh;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    margin-top: 6rem;
+    display: flex;
+    margin-left: 8rem;
+ 
+    
+}
+
+.Desc {
+    width: 40%;
+    
+}
+
+.DescTitle {
+    display: flex; 
+    width: 100%;  
+    font-size: 3rem;
+    font-weight: 600;
+    margin-left: 3rem;
+}
+
+.DescTitle div:first-child {
+    color: var(--color-primary);
+    margin-right: .8rem;
+}
+
+.DescTitle div:last-child {
+    color: var(--color-secondary);
+}
+
+
+
+.DescTitleLine {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    
+}
+
+.DescTitleLine hr:first-child {
+    width: 5rem;
+    height: .7rem;
+    background: var(--color-primary);
+    border: none;
+}
+
+
+.DescTitleLine hr:nth-child(2) {
+    width: 20rem;
+    height: .1rem;
+    background: var(--color-primary);
+    border: none;
+}
+
+.PropertyDetailPara {
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.FloorPlan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16rem;
+}
+
+.FloorPlanImg {
+    width: 60%;
+    object-fit: cover;
+}
+
+.PropertyFeatures {
+    height: 50vh;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    background: blue;
 }
