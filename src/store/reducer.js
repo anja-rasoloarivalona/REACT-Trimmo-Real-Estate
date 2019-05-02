@@ -3,7 +3,7 @@ import {products} from '../data';
 
 const initialState = {
     products: products,
-    requestedProduct: ''
+    requestedProduct: products[0]
 }
 
 

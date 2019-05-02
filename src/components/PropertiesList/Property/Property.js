@@ -3,7 +3,6 @@ import classes from './Property.css';
 import ReactSVG from 'react-svg';
 import { Link } from 'react-router-dom';
 
-import bg from '../../../assets/img/bg.jpg';
 
 import heart from '../../../assets/icon/SVG/heart.svg';
 import home from '../../../assets/icon/SVG/home.svg';
@@ -20,7 +19,7 @@ const property = (props) => {
 
         <Link to={`/details/${props.id}`} className={classes.Link}>
                 <div className={classes.Head}
-                    style={{backgroundImage: "url(" + bg + ")",
+                    style={{backgroundImage: "url(/img/properties/property0" + props.id + "/img01.jpg)",
                     backgroundPosition: "center",
                     backgroundSize: "cover"}}>
                 

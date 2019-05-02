@@ -4,6 +4,7 @@ import classes from './Details.css';
 import Property from '../../components/PropertiesList/Property/Property';
 import Form from './DetailsForm/DetailsForm';
 import bg from '../../assets/img/bg.jpg';
+import Gallery from './Gallery/Gallery';
 
 
 
@@ -28,10 +29,16 @@ class Details extends Component {
 
           <section className={classes.Main}>
               <section className={classes.Gallery}>
-                    Gallery
+                    <Gallery />
               </section>
               <section className={classes.Summary}>
-                    Summary
+                    <div className={classes.SummaryTitle}>
+                      <div>QUICK</div>
+                      <div>SUMMARY</div>
+                    </div>
+                    <div className={classes.SummaryDetails}>
+
+                    </div>
               </section>
 
           </section>
