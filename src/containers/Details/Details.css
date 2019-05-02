@@ -46,10 +46,10 @@
 
 .Summary {
     width: 30%;
-    height: 80%;
-   
+    height: 80%;  
     padding: 2rem 3rem;
-    background: red;
+
+  
 }
 
 .SummaryTitle {
@@ -69,4 +69,53 @@
 
 .SummaryTitle div:last-child {
     color: var(--color-secondary);
+}
+
+.SummaryDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.SummaryDetailsItem {
+    display: flex;
+    margin: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.SummaryDetailsItem div:first-child {
+    font-weight: 800;
+}
+
+.SummaryDetailsItem div:last-child {
+    font-size: 1.3rem;
+}
+
+.SummaryTitleLine {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    
+}
+
+.SummaryTitleLine hr:first-child {
+    width: 5rem;
+    height: .7rem;
+    background: var(--color-primary);
+    border: none;
+}
+
+
+.SummaryTitleLine hr:nth-child(2) {
+    width: 20rem;
+    height: .1rem;
+    background: var(--color-primary);
+    border: none;
 }

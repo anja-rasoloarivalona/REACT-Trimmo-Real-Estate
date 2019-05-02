@@ -36,9 +36,39 @@ class Details extends Component {
                       <div>QUICK</div>
                       <div>SUMMARY</div>
                     </div>
-                    <div className={classes.SummaryDetails}>
-
+                    <div className={classes.SummaryTitleLine}>
+                        <hr />
+                        <hr />
                     </div>
+
+                    <div className={classes.SummaryDetails}>
+                        <div className={classes.SummaryDetailsItem}>
+                              <div>Price</div>
+                              <div>$78 000</div>
+                        </div>
+                        <div className={classes.SummaryDetailsItem}>
+                              <div>Property Type</div>
+                              <div>House</div>
+                        </div>
+                        <div className={classes.SummaryDetailsItem}>
+                              <div>Area</div>
+                              <div>450 Sq Ft</div>
+                        </div>
+                        <div className={classes.SummaryDetailsItem}>
+                              <div>Beds</div>
+                              <div>2</div>
+                        </div>
+                        <div className={classes.SummaryDetailsItem}>
+                              <div>Baths</div>
+                              <div>1</div>
+                        </div>
+                        <div className={classes.SummaryDetailsItem}>
+                              <div>Garage</div>
+                              <div>1</div>
+                        </div>
+                    </div>
+
+
               </section>
 
           </section>
