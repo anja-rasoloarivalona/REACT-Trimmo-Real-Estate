@@ -88,11 +88,92 @@ class Details extends Component {
            <section className={classes.PropertyFeatures}>
                               <Title title1 ="PROPERTY"
                                      title2="FEATURES"/>
-                      <section className={classes.PropertyFeaturesItems}>
-                            <div className={classes.PropertyFeaturesItem}>
-                              
-                            </div>
-                      </section>
+                     
+                            <ul className={classes.PropertyFeaturesList}>
+                                          <li className={classes.PropertyFeaturesListItem}>
+                                                <div>
+                                                      Full area :
+                                                </div>
+                                                <div>
+                                                      520 Sq Ft 
+                                                </div>            
+                                          </li>
+                                          <li className={classes.PropertyFeaturesListItem}>
+                                                <div>
+                                                      Full area :
+                                                </div>
+                                                <div>
+                                                      520 Sq Ft 
+                                                </div>           
+                                          </li>
+                                          <li className={classes.PropertyFeaturesListItem}>
+                                                <div>
+                                                      Full area :
+                                                </div>
+                                                <div>
+                                                      520 Sq Ft 
+                                                </div>          
+                                          </li>
+                                          <li className={classes.PropertyFeaturesListItem}>
+                                                <div>
+                                                      Full area :
+                                                </div>
+                                                <div>
+                                                      520 Sq Ft 
+                                                </div>       
+                                          </li>
+                                          <li className={classes.PropertyFeaturesListItem}>
+                                                <div>
+                                                      Full area :
+                                                </div>
+                                                <div>
+                                                      520 Sq Ft 
+                                                </div>          
+                                          </li>
+                                          <li className={classes.PropertyFeaturesListItem}>
+                                                <div>
+                                                      Full area :
+                                                </div>
+                                                <div>
+                                                      520 Sq Ft 
+                                                </div>         
+                                          </li>
+                                          <li className={classes.PropertyFeaturesListItem}>
+                                                <div>
+                                                      Full area :
+                                                </div>
+                                                <div>
+                                                      520 Sq Ft 
+                                                </div>        
+                                          </li>
+                                          <li className={classes.PropertyFeaturesListItem}>
+                                                <div>
+                                                      Full area :
+                                                </div>
+                                                <div>
+                                                      520 Sq Ft 
+                                                </div>           
+                                          </li>
+                                          <li className={classes.PropertyFeaturesListItem}>
+                                                <div>
+                                                      Full area :
+                                                </div>
+                                                <div>
+                                                      520 Sq Ft 
+                                                </div>            
+                                          </li>
+                                          <li className={classes.PropertyFeaturesListItem}>
+                                                <div>
+                                                      Full area :
+                                                </div>
+                                                <div>
+                                                      520 Sq Ft 
+                                                </div>      
+                                          </li>
+
+
+                            </ul>
+                    
             </section>
     
                       
