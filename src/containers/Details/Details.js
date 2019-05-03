@@ -7,6 +7,7 @@ import bg from '../../assets/img/bg.jpg';
 import Gallery from './Gallery/Gallery';
 
 import map from '../../assets/img/map.jpg';
+import Title from '../../components/UI/Title/Title';
 
 
 
@@ -100,6 +101,12 @@ class Details extends Component {
 
            <section className={classes.PropertyFeatures}>
                       features
+                      <section className={classes.PropertyFeaturesItems}>
+                            <div className={classes.PropertyFeaturesItem}>
+                              <Title title1 ="PROPERTY"
+                                     title2="FEATURES"/>
+                            </div>
+                      </section>
             </section>
     
                       
