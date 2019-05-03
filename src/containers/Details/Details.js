@@ -35,14 +35,8 @@ class Details extends Component {
                     <Gallery />
               </section>
               <section className={classes.Summary}>
-                    <div className={classes.SummaryTitle}>
-                      <div>QUICK</div>
-                      <div>SUMMARY</div>
-                    </div>
-                    <div className={classes.SummaryTitleLine}>
-                        <hr />
-                        <hr />
-                    </div>
+                    <Title title1="QUICK"
+                        title2="SUMMARY"/>
 
                     <div className={classes.SummaryDetails}>
                         <div className={classes.SummaryDetailsItem}>
@@ -76,16 +70,8 @@ class Details extends Component {
               <section className = {classes.PropertyDetail}>
 
                 <section className={classes.Desc}> 
-                      <div className={classes.DescTitleContainer}>
-                          <div className={classes.DescTitle}>
-                                <div>PROPERTY</div>
-                                <div>DESCRIPTION</div>
-                          </div>
-                          <div className={classes.DescTitleLine}>
-                                <hr/>
-                                <hr/>
-                        </div>
-                      </div>
+                      <Title title1="PROPERTY"
+                              title2="DESCRIPTION"/>
                       <div className = {classes.PropertyDetailPara}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum, bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt. Duis euismod placerat rhoncus. Phasellus mollis imperdiet placerat. Sed ac turpis nisl. Mauris at ante mauris. Aliquam posuere fermentum lorem, a aliquam mauris rutrum a. Curabitur sit amet pretium lectus, nec consequat orci.
                       </div>
@@ -100,11 +86,11 @@ class Details extends Component {
        </section>
 
            <section className={classes.PropertyFeatures}>
-                      features
-                      <section className={classes.PropertyFeaturesItems}>
-                            <div className={classes.PropertyFeaturesItem}>
                               <Title title1 ="PROPERTY"
                                      title2="FEATURES"/>
+                      <section className={classes.PropertyFeaturesItems}>
+                            <div className={classes.PropertyFeaturesItem}>
+                              
                             </div>
                       </section>
             </section>

@@ -18,6 +18,7 @@ import bg from '../../assets/img/bg.jpg';
 import realtor from '../../assets/img/realtor.png';
 
 import PropertiesList from '../../components/PropertiesList/PropertiesList';
+import Title from '../../components/UI/Title/Title';
 
 
 class Home extends Component {
@@ -71,18 +72,15 @@ class Home extends Component {
 
         <section className={classes.Properties}>
             <div className={classes.PropertiesIntro}>
-                <div className={classes.PropertiesIntroTitle}>
-                    <div>AWESOME</div>
-                    <div>PROPERTIES</div>
-                </div>
-                <div className={classes.PropertiesTitleLine}>
-                    <hr />
-                    <hr />
-                </div>
+
+                <Title title1= "AWESOME" 
+                        title2="PROPERTIES"/>
+                        
                 <p className={classes.PropertiesIntroPara}>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum totam et dolores voluptatem porro tempore temporibus ducimus
                 </p>
             </div>
+            
             <PropertiesList />
             <div className={classes.PropertiesCTA}>
                 <button>MORE PROPERTIES</button>
@@ -216,14 +214,8 @@ class Home extends Component {
         
         <section className={classes.Testimonial}>
               <div className={classes.TestimonialIntro}>
-                  <div className={classes.TestimonialIntroTitle}>
-                      <div>OUR</div>
-                      <div>TESTIMONIAL</div>
-                  </div>
-                  <div className={classes.TestimonialTitleLine}>
-                      <hr />
-                      <hr />
-                  </div>
+                  <Title title1="OUR"
+                         title2="TESTIMONIAL"/>
                   <p className={classes.TestimonialIntroPara}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum totam et dolores voluptatem porro tempore temporibus ducimus
                   </p>
