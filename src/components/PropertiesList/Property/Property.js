@@ -26,7 +26,7 @@ const property = (props) => {
                     
                     <ReactSVG src={heart} className={classes.Icon}/>
                     <div className={classes.Price}>
-                        <span>{props.price}</span>
+                        <span>${props.price}</span>
                     </div>
                 </div>
         </Link>
