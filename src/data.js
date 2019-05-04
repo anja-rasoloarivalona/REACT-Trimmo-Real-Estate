@@ -17,7 +17,8 @@ export const products = [
         swimmingPool: "yes",
         partyRooms: "yes", 
         balcony: "yes",
-        pool: "yes"
+        pool: "yes",
+        mainImg: "/img/properties/property01/img01.jpg"
         
         
         
@@ -38,7 +39,8 @@ export const products = [
         numbKitchen: 1,
         numbACrooms: 3,
         sauna: "yes",
-        jacuzzi: "yes"
+        jacuzzi: "yes",
+        mainImg: "/img/properties/property02/img01.jpg"
         
         
         
@@ -60,6 +62,7 @@ export const products = [
         spa: "yes",
         balcony: "yes",
         fitnessCenter: "yes",
+        mainImg: "/img/properties/property03/img01.jpg"
 
         
         
@@ -82,7 +85,8 @@ export const products = [
         swimmingPool: "yes",
         partyRooms: "yes", 
         balcony: "yes",
-        pool: "yes"
+        pool: "yes",
+        mainImg: "/img/properties/property04/img01.jpg"
         
         
         
@@ -103,7 +107,8 @@ export const products = [
         spa: "yes",
         balcony: "yes",
         fitnessCenter: "yes",
-        pool: "yes"          
+        pool: "yes",
+        mainImg: "/img/properties/property05/img01.jpg"       
     },
 
     {
@@ -121,6 +126,7 @@ export const products = [
         numBkitchen: 2,
         swimmingPool: "yes",
         partyRooms: "yes", 
-        balcony: "yes"   
+        balcony: "yes",
+        mainImg: "/img/properties/property06/img01.jpg"  
     }
 ];

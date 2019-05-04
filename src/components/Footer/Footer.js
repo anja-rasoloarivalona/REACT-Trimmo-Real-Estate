@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import classes from './Footer.css';
 import ReactSVG from 'react-svg';
 
@@ -13,6 +14,8 @@ import google from '../../assets/icon/SVG/google-plus.svg';
 
 class Footer extends Component {
   render() {
+      let properties = [...this.props.properties];
+      
     return (
       <footer className={classes.Footer}>
 
@@ -36,6 +39,10 @@ class Footer extends Component {
         <div className={classes.RecentProperty}>
                 <Title title1="RECENT"
                        title2="PROPERTIES"/>
+
+                <section className={classes.RecentPropertyGallery}>
+
+                </section>
         </div>
 
         <div className={classes.SiteMap}>
@@ -48,4 +55,10 @@ class Footer extends Component {
   }
 }
 
-export default Footer
+const mapStateToProps = state => {
+    return  {
+        properties: state.products
+    }
+}
+
+export default connect(mapStateToProps)(Footer)
