@@ -20,7 +20,6 @@ class Details extends Component {
    
     return (
       <div className={classes.Details}>
-
           <section className={classes.Header}
                     style={{backgroundImage: "url(" + bg + ")",
                     backgroundPosition: "center",
@@ -87,7 +86,7 @@ class Details extends Component {
                 </section>
          </section>
 
-           <section className={classes.PropertyFeatures}>
+          <section className={classes.PropertyFeatures}>
                               <Title title1 ="PROPERTY"
                                      title2="FEATURES"/>
                      
@@ -178,7 +177,7 @@ class Details extends Component {
                     
             </section>
     
-            <section className={classes.PropertyRealtor}>
+          <section className={classes.PropertyRealtor}>
                   <Title title1 ="CONTACT"
                          title2="AGENT"/>
                   <section className={classes.PropertyRealtorContact}>
@@ -216,10 +215,9 @@ class Details extends Component {
                         </form>
                   </section>
             </section>   
-            <section className={classes.Test}>
-            </section>    
-  
-                
+
+          <section className={classes.Test}>
+          </section>              
       </div>
 
       

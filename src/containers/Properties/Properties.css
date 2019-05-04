@@ -1,8 +1,6 @@
 .Properties {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
-    height: 100vh;
-    
     display: grid;
     grid-template-columns: 1fr 90vw 1fr;
     grid-template-rows:  max-content;

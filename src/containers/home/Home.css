@@ -1,8 +1,18 @@
-.Home {
+.Container {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 87vw 1fr;
+    grid-template-rows: max-content;
+    grid-auto-rows: max-content;
+}
+
+.Home {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
     position: relative;
-    width: 100vw;   
+    width: 100vw; 
+    height: calc(100vh - 11rem);  
 }
 
 

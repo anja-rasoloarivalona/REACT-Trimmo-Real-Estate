@@ -4,6 +4,7 @@ import './App.css';
 
 import Navbar from './components/Navbar/Navbar';
 import Layout from './components/Layout/Layout';
+import Footer from './components/Footer/Footer';
 
 import Home from './containers/home/Home';
 import About from './containers/About/About';
@@ -25,6 +26,8 @@ class App extends Component {
               <Route path="/about" component={About}></Route>
               <Route path="/properties" component={Properties}></Route>
               <Route path={`/details/:propertyId`} render={props => <Details {...props}/>}></Route>
+            <Footer />
+            
 
       </Layout>
     )

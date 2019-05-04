@@ -24,12 +24,13 @@ import Title from '../../components/UI/Title/Title';
 class Home extends Component {
   render() {
     return (
-      <React.Fragment>
-        <section
-            style={{backgroundImage: "url(" + bg + ")",
+      <section className={classes.Container}>
+
+        <section className={classes.Home}
+                style={{backgroundImage: "url(" + bg + ")",
                     backgroundPosition: "center",
                     backgroundSize: "cover"}}
-            className={classes.Home}>
+            >
             <Form />
         </section> 
 
@@ -54,19 +55,19 @@ class Home extends Component {
         </section>
 
         <section className={classes.Add}
-        style={{backgroundImage: "linear-gradient(110deg, rgba(198, 153, 99,1) 0%, rgba(198, 153, 99,1) 46%, white 46%, white 47%,  rgba(16, 29, 44,1) 47%)",
+                style={{backgroundImage: "linear-gradient(110deg, rgba(198, 153, 99,1) 0%, rgba(198, 153, 99,1) 46%, white 46%, white 47%,  rgba(16, 29, 44,1) 47%)",
                 backgroundPosition: "center",
                 backgroundSize: "cover"}}>
 
-          <div className={classes.AddInfo1}>
-            <div>FIND YOUR</div>
-            <div>DREAM HOME</div>
-          </div>
+            <div className={classes.AddInfo1}>
+                <div>FIND YOUR</div>
+                <div>DREAM HOME</div>
+            </div>
 
-          <div className={classes.AddInfo2}>
-            <div>WE ARE READY TO RECEIVE YOUR CALL</div>
-            <div>+1 514 123 1234</div>
-          </div>
+            <div className={classes.AddInfo2}>
+                <div>WE ARE READY TO RECEIVE YOUR CALL</div>
+                <div>+1 514 123 1234</div>
+            </div>
 
         </section>
 
@@ -222,7 +223,7 @@ class Home extends Component {
               </div>
         </section>
 
-      </React.Fragment>
+      </section>
 
 
     
