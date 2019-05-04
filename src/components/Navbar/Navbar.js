@@ -15,6 +15,7 @@ import linkedin from '../../assets/icon/SVG/linkedin2.svg';
 import google from '../../assets/icon/SVG/google-plus.svg';
 
 const navbar = () => {
+
   return (
     <section className={classes.NavbarContainer}>
 
@@ -62,13 +63,14 @@ const navbar = () => {
         <nav className={classes.Nav}>
             <img className={classes.Logo} alt="Logo" src={logo}/>
             <li className={classes.NavList}>
-                <NavLink  to='/' className={classes.Link}>
+
+                <NavLink exact  to='/' className={classes.Link} activeClassName={classes.Active}>
                     Home
                 </NavLink >
-                <NavLink  to='/about' className={classes.Link}>
+                <NavLink  to='/about' className={classes.Link} activeClassName={classes.Active}>
                     About
                 </NavLink >
-                <NavLink  to='/properties' className={classes.Link}>
+                <NavLink  to='/properties' className={classes.Link} activeClassName={classes.Active}>
                     Properties
                 </NavLink >
             </li>
