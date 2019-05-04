@@ -25,7 +25,7 @@ import Map from '../../components/Map/Map';
                     </div>
               </div>
               <div className={classes.MapContainer}>
-                <Map />
+                {/*<Map />*/}
               </div>
               
               <PropertiesList />
