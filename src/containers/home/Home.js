@@ -14,6 +14,7 @@ import realtor2  from '../../assets/img/realtor-2.png';
 import realtor3  from '../../assets/img/realtor-3.png';
 import realtor4  from '../../assets/img/realtor-4.png';
 
+import handshake from '../../assets/img/handshake.jpg';
 import bg from '../../assets/img/bg.jpg';
 import realtor from '../../assets/img/realtor.png';
 
@@ -26,7 +27,7 @@ class Home extends Component {
 componentDidMount() {
         window.scrollTo(0, 0)
       }
-      
+
 render() {
     return (
       <section className={classes.Container}>
@@ -218,14 +219,22 @@ render() {
 
         </section>
         
-        <section className={classes.Testimonial}>
-              <div className={classes.TestimonialIntro}>
-                  <Title title1="OUR"
-                         title2="TESTIMONIAL"/>
-                  <p className={classes.TestimonialIntroPara}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum totam et dolores voluptatem porro tempore temporibus ducimus
-                  </p>
+        <section className={classes.Subscribe}
+            style={{backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(" + handshake + ")",
+            backgroundPosition: "center",
+            backgroundSize: "cover"}}>
+
+              <div className={classes.SubscribeTitle}>
+                <div>SUBSCRIBE</div>
+                <div>NEWSLETTER</div>
               </div>
+              <p>
+              consectetur adipisicing elit. Beatae ducimus in enim quae 
+              </p>
+              <form className={classes.Form}>              
+                    <input type="email" placeholder="Email adress" className={classes.Input}/>
+                    <input className={classes.FormCTA} type="submit" value="Send"></input>                         
+              </form>
         </section>
 
       </section>
