@@ -218,10 +218,7 @@ class Details extends Component {
                         
                         </form>
                   </section>
-            </section>   
-
-          <section className={classes.Test}>
-          </section>              
+            </section>           
       </div>
 
       

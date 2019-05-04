@@ -174,13 +174,6 @@
 
 }
 
-.Test {
-    grid-row: 6 / 7;
-    grid-column: 2 / 3;  
-    height: 50vh;
-}
-
-
 .PropertyRealtorContact {
     display: flex;   
     align-items: flex-end;
