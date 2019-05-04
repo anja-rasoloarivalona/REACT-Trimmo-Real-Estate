@@ -18,6 +18,17 @@
     margin: 0 1rem;
 }
 
+.RecentPropertyGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.Img {
+    width: 100%;
+    object-fit: cover;  
+}
+
 .SiteMap {
     width: calc(100% / 3);
     background: yellow;

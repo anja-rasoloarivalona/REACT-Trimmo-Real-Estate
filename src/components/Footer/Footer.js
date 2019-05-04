@@ -10,12 +10,13 @@ import facebook from '../../assets/icon/SVG/facebook.svg';
 import twitter from '../../assets/icon/SVG/twitter.svg';
 import linkedin from '../../assets/icon/SVG/linkedin2.svg';
 import google from '../../assets/icon/SVG/google-plus.svg';
+import Properties from '../../containers/Properties/Properties';
 
 
 class Footer extends Component {
   render() {
       let properties = [...this.props.properties];
-      
+
     return (
       <footer className={classes.Footer}>
 
@@ -41,7 +42,11 @@ class Footer extends Component {
                        title2="PROPERTIES"/>
 
                 <section className={classes.RecentPropertyGallery}>
-
+                    {
+                        properties.map (item => {
+                            return <img src={item.mainImg} alt="img" className={classes.Img}/>
+                        })
+                    }
                 </section>
         </div>
 
