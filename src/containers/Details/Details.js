@@ -9,6 +9,8 @@ import Gallery from './Gallery/Gallery';
 import map from '../../assets/img/map.jpg';
 import Title from '../../components/UI/Title/Title';
 
+import realtor1 from '../../assets/img/realtor-1.png';
+
 
 
 class Details extends Component {
@@ -67,7 +69,7 @@ class Details extends Component {
               </section>
           </section>
 
-              <section className = {classes.PropertyDetail}>
+          <section className = {classes.PropertyDetail}>
 
                 <section className={classes.Desc}> 
                       <Title title1="PROPERTY"
@@ -83,7 +85,7 @@ class Details extends Component {
                 <section className={classes.FloorPlan}>
                       <img src={map} alt="floor" className={classes.FloorPlanImg} />
                 </section>
-       </section>
+         </section>
 
            <section className={classes.PropertyFeatures}>
                               <Title title1 ="PROPERTY"
@@ -176,7 +178,46 @@ class Details extends Component {
                     
             </section>
     
-                      
+            <section className={classes.PropertyRealtor}>
+                  <Title title1 ="CONTACT"
+                         title2="AGENT"/>
+                  <section className={classes.PropertyRealtorContact}>
+
+                        <div className={classes.Realtor}>
+                              <div className={classes.RealtorImgContainer}>
+                                    <img alt='realtor' className={classes.RealtorImg} src={realtor1}/>
+                              </div>
+                              <div className={classes.RealtorDetails}>
+                                    <div>JONH DOE</div>
+                                    <div>Sales Executive</div>
+                              </div>
+                        </div>
+                        
+                        <form className={classes.Form}>
+
+                              <div className={classes.Input + ' ' + classes.FormName}>
+                                    <label htmlFor={classes.FormName}>Name</label>
+                                    <input type="text" placeholder="Full name" className={classes.InputField}/>
+                              </div>
+
+                              <div className={classes.Input + ' ' + classes.FormMail}>
+                                    <label htmlFor={classes.FormMail}>E-mail address</label>
+                                    <input type="email" placeholder="Email adress" className={classes.InputField}/>
+                              </div>
+
+                              <div className={classes.Input + ' ' + classes.FormText}>
+                                    <label htmlFor={classes.FormText}>Message</label>
+                                    <textarea type="text-area" placeholder="Your message" className={classes.InputField}></textarea>
+                              </div>
+                              <input className={classes.FormCTA} type="submit" value="Send"></input>
+
+                              
+                        
+                        </form>
+                  </section>
+            </section>   
+            <section className={classes.Test}>
+            </section>    
   
                 
       </div>
