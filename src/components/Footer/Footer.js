@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import classes from './Footer.css';
+import { NavLink } from 'react-router-dom';
 import ReactSVG from 'react-svg';
 
 import Title from '../../components/UI/Title/Title'
@@ -50,10 +51,23 @@ class Footer extends Component {
                 </section>
         </div>
 
-        <div className={classes.SiteMap}>
+        <nav className={classes.SiteMap}>
+
                 <Title title1="SITE"
                        title2="MAP"/>
-        </div>
+
+                <li className={classes.Nav}>
+                    <NavLink  to='/' className={classes.Link}>
+                        Home
+                    </NavLink >
+                    <NavLink  to='/about' className={classes.Link}>
+                        About
+                    </NavLink >
+                    <NavLink  to='/properties' className={classes.Link}>
+                        Properties
+                    </NavLink >
+                </li>               
+        </nav>
         
       </footer>
     )
