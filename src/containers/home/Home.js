@@ -22,7 +22,12 @@ import Title from '../../components/UI/Title/Title';
 
 
 class Home extends Component {
-  render() {
+
+componentDidMount() {
+        window.scrollTo(0, 0)
+      }
+      
+render() {
     return (
       <section className={classes.Container}>
 

@@ -5,6 +5,10 @@ import PropertiesList from '../../components/PropertiesList/PropertiesList';
 import Map from '../../components/Map/Map';
 
  class Properties extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+  
   render() {
     return (
       <section className={classes.Properties}>

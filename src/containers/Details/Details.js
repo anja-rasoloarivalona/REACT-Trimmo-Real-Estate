@@ -14,6 +14,10 @@ import realtor1 from '../../assets/img/realtor-1.png';
 
 
 class Details extends Component {
+
+      componentDidMount() {
+            window.scrollTo(0, 0)
+          }
  
   render() {    
 
