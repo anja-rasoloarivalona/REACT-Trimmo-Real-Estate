@@ -2,48 +2,59 @@ export const products = [
 
     {
         id:1,
-        lat: 45.50884,
-        lng: -73.58781,
-        fullAdress: "5478 rue Saint-André, Montréal QC, H2J 987",
+        lat: 45.531900,
+        lng: -73.592300,
         infoWindow: "Beautiful Family House",
         title: "Beautiful Family House",
-        price: "25 000 000",
-        surface: 450,
-        numbBeds: 2,
-        numbBaths: 2,
-        numbGarage: 2,
-        numBkitchen: 2,
-        numbACrooms: 4,
-        swimmingPool: "yes",
-        partyRooms: "yes", 
-        balcony: "yes",
-        pool: "yes",
-        mainImg: "/img/properties/property01/img01.jpg"
-        
-        
-        
+        mainImg: "/img/properties/property01/img01.jpg",
+        adress: {
+            fullAdress: "5485 Rue Saint-André, Montréal QC,  H2J 4G3",
+            streetNumber: 5478,
+            streetName: "Rue Saint-André",
+            city: "Montréal",
+            province: "QC",
+            postalCode: " H2J 4G3"},      
+        info: {
+            price: "25 000 000",
+            surface: 450,
+            numbBeds: 2,
+            numbBaths: 2,
+            numbGarage: 2,
+            numBkitchen: 2,
+            numbACrooms: 4,
+            swimmingPool: "yes",
+            partyRooms: "yes", 
+            balcony: "yes",
+            pool: "yes"}           
     },
 
     {
         id:2,
         lat: 45.538207,
         lng: -73.637691,
-        fullAdress: "5478 rue Saint-André, Montréal QC, H2J 987",
         title: "Awesome appartement",
         infoWindow: "Awesome appartement",
-        price: "4 325 000",
-        surface: 350,
-        numbBeds: 2,
-        numbBaths: 1,
-        numbGarage: 1,
-        numbKitchen: 1,
-        numbACrooms: 3,
-        sauna: "yes",
-        jacuzzi: "yes",
-        mainImg: "/img/properties/property02/img01.jpg"
+        mainImg: "/img/properties/property02/img01.jpg",
+        adress: {
+            fullAdress: "5478 rue Saint-André, Montréal QC, H2J 987",
+            streetNumber: 54,
+            streetName: "",
+            city: "Montréal",
+            province: "QC",
+            postalCode: "ioiorebber"
+        },
         
-        
-        
+        info: {
+            price: "4 325 000",
+            surface: 350,
+            numbBeds: 2,
+            numbBaths: 1,
+            numbGarage: 1,
+            numbKitchen: 1,
+            numbACrooms: 3,
+            sauna: "yes",
+            jacuzzi: "yes", 
+        }           
     },
 
     {
