@@ -7,8 +7,8 @@ export const products = [
         infoWindow: "Beautiful Family House",
         title: "Beautiful Family House",
         mainImg: "/img/properties/property01/img01.jpg",
-        adress: {
-            fullAdress: "5485 Rue Saint-André, Montréal QC,  H2J 4G3",
+        address: {
+            fullAddress: "5485 Rue Saint-André, Montréal QC,  H2J 4G3",
             streetNumber: 5478,
             streetName: "Rue Saint-André",
             city: "Montréal",
@@ -35,8 +35,8 @@ export const products = [
         title: "Awesome appartement",
         infoWindow: "Awesome appartement",
         mainImg: "/img/properties/property02/img01.jpg",
-        adress: {
-            fullAdress: "505 Boulevard de Maisonneuve Ouest, Montréal QC, H3A 3C2",
+        address: {
+            fullAddress: "505 Boulevard de Maisonneuve Ouest, Montréal QC, H3A 3C2",
             streetNumber: 505,
             streetName: "Boulevard de Maisonneuve Ouest",
             city: "Montréal",
@@ -61,8 +61,8 @@ export const products = [
         title: "Rooftop Appartment",
         infoWindow: "Rooftop Appartment",
         mainImg: "/img/properties/property03/img01.jpg",
-        adress: {
-            fullAdress: "1100 Rue Jeanne-Mance, Montréal QC, H2Z 1L7",
+        address: {
+            fullAddress: "1100 Rue Jeanne-Mance, Montréal QC, H2Z 1L7",
             streetNumber: 1100,
             streetName: "Rue Jeanne-Mance",
             city: "Montréal",
@@ -87,8 +87,8 @@ export const products = [
         title: "Beautiful Condo",
         infoWindow: "Beautiful Condo",
         mainImg: "/img/properties/property04/img01.jpg",
-        adress: {
-            fullAdress: "400 Avenue Clarke, Montréal QC, H3Z 2E7",
+        address: {
+            fullAddress: "400 Avenue Clarke, Montréal QC, H3Z 2E7",
             streetNumber: 400,
             streetName: "Avenue Clarke",
             city: "Montréal",
@@ -115,8 +115,8 @@ export const products = [
         title: "Modern Family House",
         infoWindow: "Modern Family House",
         mainImg: "/img/properties/property05/img01.jpg",
-        adress: {
-            fullAdress: "4640 Rue de Bellechasse, Montréal QC, H1T 1Z3",
+        address: {
+            fullAddress: "4640 Rue de Bellechasse, Montréal QC, H1T 1Z3",
             streetNumber: 4640,
             streetName: "Rue de Bellechasse",
             city: "Montréal",
@@ -143,8 +143,8 @@ export const products = [
         title: "Awesome Villa",
         infoWindow: "Awesome Villa",
         mainImg: "/img/properties/property06/img01.jpg",
-        adress: {
-            fullAdress: "2134 Boulevard Gouin Est, Montreal QC, H2B 1X2",
+        address: {
+            fullAddress: "2134 Boulevard Gouin Est, Montreal QC, H2B 1X2",
             streetNumber: 2134,
             streetName: "Boulevard Gouin Est",
             city: "Montréal",

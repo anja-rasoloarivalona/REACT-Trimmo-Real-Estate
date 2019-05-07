@@ -10,7 +10,7 @@
 }
 
 .Header {
-    height: 100vh;
+    height: calc(100vh - 11rem);
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     position: relative;
@@ -26,9 +26,30 @@
     background: var(--color-secondary);
 }
 
+.HeaderAddress {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    padding: 1rem 2rem;
+    margin-left: 6.4rem;
+    transform: translateY(3.5rem);
+}
+
+.HeaderAddressMain {
+font-size: 4rem;
+font-weight: 600;
+color: var(--color-primary);
+}
+
+.HeaderAddressSub {
+font-size: 1.4rem;
+color: var(--color-secondary);
+
+}
+
+
 .Main {
     height: 80vh;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     grid-column: 2 / 3;
     display: flex;
     align-items: center;
@@ -86,7 +107,7 @@
 
 .PropertyDetail {
     height: 50vh;
-    grid-row: 3 / 4;
+    grid-row: 4/ 5;
     grid-column: 2 / 3;
     margin-top: 6rem;
     display: flex;
@@ -120,7 +141,7 @@
 }
 
 .PropertyFeatures {
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
     grid-column: 2 / 3;
     margin-top: 6rem;
     margin-left: 8rem;
@@ -166,7 +187,7 @@
 
 
 .PropertyRealtor {
-    grid-row: 5 / 6;
+    grid-row: 6 / 7;
     grid-column: 2 / 3;   
     margin-left: 8rem;
     margin-bottom: 10rem;
