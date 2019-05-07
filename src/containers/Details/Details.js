@@ -50,27 +50,27 @@ class Details extends Component {
                     <div className={classes.SummaryDetails}>
                         <div className={classes.SummaryDetailsItem}>
                               <div>Price</div>
-                              <div>$78 000</div>
-                        </div>
-                        <div className={classes.SummaryDetailsItem}>
-                              <div>Property Type</div>
-                              <div>House</div>
-                        </div>
+                              <div>{this.props.requestedProduct.info.price}</div>
+                        </div>               
                         <div className={classes.SummaryDetailsItem}>
                               <div>Area</div>
-                              <div>450 Sq Ft</div>
+                              <div>{this.props.requestedProduct.info.psurface} Sq Ft</div>
                         </div>
                         <div className={classes.SummaryDetailsItem}>
                               <div>Beds</div>
-                              <div>2</div>
+                              <div>{this.props.requestedProduct.info.numbBeds}</div>
                         </div>
                         <div className={classes.SummaryDetailsItem}>
                               <div>Baths</div>
-                              <div>1</div>
+                              <div>{this.props.requestedProduct.info.numbBaths}</div>
+                        </div>
+                        <div className={classes.SummaryDetailsItem}>
+                              <div>Kitchen</div>
+                              <div>{this.props.requestedProduct.info.numbKitchen}</div>
                         </div>
                         <div className={classes.SummaryDetailsItem}>
                               <div>Garage</div>
-                              <div>1</div>
+                              <div>{this.props.requestedProduct.info.numbGarage}</div>
                         </div>
                     </div>
               </section>
