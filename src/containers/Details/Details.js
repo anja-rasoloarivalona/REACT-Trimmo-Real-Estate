@@ -29,21 +29,16 @@ class Details extends Component {
                     backgroundPosition: "center",
                     backgroundSize: "cover"}}
           >
-              <div className={classes.HeaderTitle}>
-                  PROPERTIES DETAILS
-              </div>
-              <Form />            
-          </section>
-
-            <section className={classes.HeaderAddress}>
+              <div className={classes.HeaderAddress}>
                   <div className={classes.HeaderAddressMain}>
                         {this.props.requestedProduct.address.streetNumber} {this.props.requestedProduct.address.streetName}
                   </div>
                   <div className={classes.HeaderAddressSub}>
                         {this.props.requestedProduct.address.city} {this.props.requestedProduct.address.province}, {this.props.requestedProduct.address.postalCode}
                   </div>
-            </section>
-
+            </div>
+              <Form />            
+          </section>
           <section className={classes.Main}>
               <section className={classes.Gallery}>
                     <Gallery />
