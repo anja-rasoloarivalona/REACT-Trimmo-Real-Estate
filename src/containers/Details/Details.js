@@ -25,7 +25,7 @@ class Details extends Component {
     return (
       <div className={classes.Details}>
           <section className={classes.Header}
-                    style={{backgroundImage: "url(" + bg + ")",
+                    style={{backgroundImage: "url(" + this.props.requestedProduct.mainImg + ")",
                     backgroundPosition: "center",
                     backgroundSize: "cover"}}
           >
