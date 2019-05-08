@@ -140,6 +140,7 @@ color: var(--color-white);
     height: 80vh;
     display: flex;
     flex-direction: column;
+    margin-bottom: 6rem;
 
 }
 
@@ -147,10 +148,10 @@ color: var(--color-white);
 
 .PropertyFeaturesList {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 25rem);
-    grid-template-rows: repeat(auto-fit, 3rem);
+    grid-template-columns: repeat(auto-fit, 30rem);
+    grid-template-rows: repeat(auto-fit, 2.5rem);
     grid-auto-rows: 3rem;
-    width: 70%;
+    width: 80%;
     justify-content: center;
     align-items: center;
     align-self: center;
@@ -160,16 +161,28 @@ color: var(--color-white);
 
 }
 
+.PropertyFeaturesListIcon div svg{
+    height: 1.3rem;
+    width: 1.3rem;
+    object-fit: cover;
+    fill: var(--color-primary);
+    margin-right: 6px;
+    color: var(--color-primary);
+}
+
 .PropertyFeaturesListItem {
     display: flex;
     justify-content: space-between;
-    margin: 2rem;
-    width: 80%;
+    align-items: center;
+    width: 100%;
     font-size: 1.4rem;
+    padding: 0 4rem;
+ 
 }
 
 .PropertyFeaturesListItem div:first-child {
-    font-weight: 800;
+    display: flex;
+    align-items: center;
     
 }
 

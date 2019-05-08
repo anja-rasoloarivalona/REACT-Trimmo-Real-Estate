@@ -11,6 +11,9 @@ import Title from '../../components/UI/Title/Title';
 
 import realtor1 from '../../assets/img/realtor-1.png';
 
+import ReactSVG from 'react-svg';
+import circle from '../../assets/icon/SVG/circle-right.svg';
+
 
 
 class Details extends Component {
@@ -107,10 +110,14 @@ class Details extends Component {
 
                         {info.map(item => {
                               return (
-                                    <div key={item[0]}>
-                                          <div>{item[0]}</div>
+                                    <li key={item[0]} className={classes.PropertyFeaturesListItem}>
+                                          <div>
+                                          <ReactSVG src={circle} className={classes.PropertyFeaturesListIcon}/>
+                                          {item[0]}
+                                          
+                                          </div>
                                           <div>{item[1]}</div>
-                                    </div>
+                                    </li>
                               )
                         })
 
