@@ -17,11 +17,11 @@ export const products = [
         info: {
             price: "25 000 000",
             surface: 450,
-            bed: 2,
+            beds: 2,
             baths: 2,
             garage: 2,
             kitchen: 2,
-            "AC rooms": 4,
+            "AC Roms": 4,
             "Swimming Pool": "yes",
             "Party Rooms": "yes", 
             balcony: "yes",
@@ -45,11 +45,11 @@ export const products = [
         info: {
             price: "4 325 000",
             surface: 350,
-            numbBeds: 2,
-            numbBaths: 1,
-            numbGarage: 1,
-            numbKitchen: 1,
-            numbACrooms: 3,
+            beds: 2,
+            baths: 1,
+            garage: 1,
+            kitchen: 1,
+            "AC Rooms": 3,
             sauna: "yes",
             jacuzzi: "yes"}           
     },
@@ -71,13 +71,13 @@ export const products = [
         info: {
             price: "6 400 000",
             surface: 550,
-            numbBeds: 4,
-            numbBaths: 2,
-            numbGarage: 2,
-            numbKitchen: 1,   
+            beds: 4,
+            baths: 2,
+            garage: 2,
+            kitchen: 1,   
             spa: "yes",
             balcony: "yes",
-            fitnessCenter: "yes"},            
+            "Fitness Center": "yes"},            
     },
 
     {
@@ -97,13 +97,13 @@ export const products = [
         info: {
             price: "13 470 000",
             surface: 450,
-            numbBeds: 5,
-            numbBaths: 3,
-            numbGarage: 2,
-            numbKitchen: 2,
-            numbACrooms: 7,
-            swimmingPool: "yes",
-            partyRooms: "yes", 
+            beds: 5,
+            baths: 3,
+            garage: 2,
+            kitchen: 2,
+            "AC Rooms": 7,
+            "Swimming Pool": "yes",
+            "Party Rooms": "yes", 
             balcony: "yes",
             pool: "yes"}      
     },
@@ -126,13 +126,13 @@ export const products = [
         info: {
             price: "17 890 000",
             surface: 670,
-            numbBeds: 2,
-            numbBaths: 2,
-            numbGarage: 2,
-            numbKitchen: 2,
+            beds: 2,
+            baths: 2,
+            garage: 2,
+            kitchen: 2,
             spa: "yes",
             balcony: "yes",
-            fitnessCenter: "yes",
+            "Fitness Center": "yes",
             pool: "yes"}       
     },
 
@@ -153,12 +153,12 @@ export const products = [
         info : {
             price: "21 500 000",
             surface: 950,
-            numbBeds: 6,
-            numbBaths: 3,
-            numbGarage: 3,
-            numbKitchen: 2,
-            swimmingPool: "yes",
-            partyRooms: "yes", 
+            beds: 6,
+            baths: 3,
+            garage: 3,
+            kitchen: 2,
+            "Swimming Pool": "yes",
+            "Party Rooms": "yes", 
             balcony: "yes"}     
     }
 ];
