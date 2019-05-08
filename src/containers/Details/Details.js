@@ -20,6 +20,11 @@ class Details extends Component {
           }
  
   render() {    
+      let tempInfo = this.props.requestedProduct.info;
+      let info = Object.keys(tempInfo).map(data => [data, tempInfo[data]])
+      
+      console.log(info);
+      
 
    
     return (
@@ -99,86 +104,17 @@ class Details extends Component {
                                      title2="FEATURES"/>
                      
                             <ul className={classes.PropertyFeaturesList}>
-                                          <li className={classes.PropertyFeaturesListItem}>
-                                                <div>
-                                                      Full area :
-                                                </div>
-                                                <div>
-                                                      520 Sq Ft 
-                                                </div>            
-                                          </li>
-                                          <li className={classes.PropertyFeaturesListItem}>
-                                                <div>
-                                                      Full area :
-                                                </div>
-                                                <div>
-                                                      520 Sq Ft 
-                                                </div>           
-                                          </li>
-                                          <li className={classes.PropertyFeaturesListItem}>
-                                                <div>
-                                                      Full area :
-                                                </div>
-                                                <div>
-                                                      520 Sq Ft 
-                                                </div>          
-                                          </li>
-                                          <li className={classes.PropertyFeaturesListItem}>
-                                                <div>
-                                                      Full area :
-                                                </div>
-                                                <div>
-                                                      520 Sq Ft 
-                                                </div>       
-                                          </li>
-                                          <li className={classes.PropertyFeaturesListItem}>
-                                                <div>
-                                                      Full area :
-                                                </div>
-                                                <div>
-                                                      520 Sq Ft 
-                                                </div>          
-                                          </li>
-                                          <li className={classes.PropertyFeaturesListItem}>
-                                                <div>
-                                                      Full area :
-                                                </div>
-                                                <div>
-                                                      520 Sq Ft 
-                                                </div>         
-                                          </li>
-                                          <li className={classes.PropertyFeaturesListItem}>
-                                                <div>
-                                                      Full area :
-                                                </div>
-                                                <div>
-                                                      520 Sq Ft 
-                                                </div>        
-                                          </li>
-                                          <li className={classes.PropertyFeaturesListItem}>
-                                                <div>
-                                                      Full area :
-                                                </div>
-                                                <div>
-                                                      520 Sq Ft 
-                                                </div>           
-                                          </li>
-                                          <li className={classes.PropertyFeaturesListItem}>
-                                                <div>
-                                                      Full area :
-                                                </div>
-                                                <div>
-                                                      520 Sq Ft 
-                                                </div>            
-                                          </li>
-                                          <li className={classes.PropertyFeaturesListItem}>
-                                                <div>
-                                                      Full area :
-                                                </div>
-                                                <div>
-                                                      520 Sq Ft 
-                                                </div>      
-                                          </li>
+
+                        {info.map(item => {
+                              return (
+                                    <div key={item[0]}>
+                                          <div>{item[0]}</div>
+                                          <div>{item[1]}</div>
+                                    </div>
+                              )
+                        })
+
+                        }
 
 
                             </ul>
