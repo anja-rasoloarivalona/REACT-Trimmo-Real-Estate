@@ -78,7 +78,7 @@
 }
 
 
-.Adress {
+.Address {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +87,7 @@
     color: var(--color-white);
 }
 
-.AdressIcon div svg {
+.AddressIcon div svg {
     fill: var(--color-white);
     height: 2rem;
     object-fit: cover;

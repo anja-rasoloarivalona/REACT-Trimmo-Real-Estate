@@ -36,9 +36,9 @@ export const products = [
         infoWindow: "Awesome appartement",
         mainImg: "/img/properties/property02/img01.jpg",
         address: {
-            fullAddress: "505 Boulevard de Maisonneuve Ouest, Montréal QC, H3A 3C2",
+            fullAddress: "505 Bv de Maisonneuve O, Montréal QC, H3A 3C2",
             streetNumber: 505,
-            streetName: "Boulevard de Maisonneuve Ouest",
+            streetName: "Bv de Maisonneuve O",
             city: "Montréal",
             province: "QC",
             postalCode: "H3A 3C2"},  

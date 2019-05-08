@@ -12,14 +12,14 @@ class PropertiesList extends Component {
           <div className={classes.PropertiesList}>
             {myproperties.map(item => {
                 return <Property key={item.id}
-                        price ={item.price}
+                        price ={item.info.price}
                         title ={item.title}
-                        numbBeds={item.numbBeds}
-                        numbBaths={item.numbBaths}
-                        numbGarage={item.numbGarage}
-                        surface={item.surface}
+                        numbBeds={item.info.beds}
+                        numbBaths={item.info.baths}
+                        numbGarage={item.info.garage}
+                        surface={item.info.surface}
                         id={item.id}
-                        fullAdress={item.fullAdress}
+                        fullAddress={item.address.fullAddress}
                         requestedDetail={() => this.props.onRequestedId(item.id)}/>}       
                 )}
              </div>   )

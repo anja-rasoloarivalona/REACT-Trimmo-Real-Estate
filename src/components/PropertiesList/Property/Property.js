@@ -60,9 +60,9 @@ const property = (props) => {
        
         </div>
 
-        <div className={classes.Adress}>
-            <ReactSVG src={location} className={classes.AdressIcon}/>
-            <div>{props.fullAdress}</div>
+        <div className={classes.Address}>
+            <ReactSVG src={location} className={classes.AddressIcon}/>
+            <div>{props.fullAddress}</div>
         </div>
 
     </section>
