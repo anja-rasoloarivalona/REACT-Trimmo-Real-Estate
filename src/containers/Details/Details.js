@@ -62,23 +62,23 @@ class Details extends Component {
                         </div>               
                         <div className={classes.SummaryDetailsItem}>
                               <div>Area</div>
-                              <div>{this.props.requestedProduct.info.psurface} Sq Ft</div>
+                              <div>{this.props.requestedProduct.info.surface} Sq Ft</div>
                         </div>
                         <div className={classes.SummaryDetailsItem}>
                               <div>Beds</div>
-                              <div>{this.props.requestedProduct.info.numbBeds}</div>
+                              <div>{this.props.requestedProduct.info.beds}</div>
                         </div>
                         <div className={classes.SummaryDetailsItem}>
                               <div>Baths</div>
-                              <div>{this.props.requestedProduct.info.numbBaths}</div>
+                              <div>{this.props.requestedProduct.info.baths}</div>
                         </div>
                         <div className={classes.SummaryDetailsItem}>
                               <div>Kitchen</div>
-                              <div>{this.props.requestedProduct.info.numbKitchen}</div>
+                              <div>{this.props.requestedProduct.info.kitchen}</div>
                         </div>
                         <div className={classes.SummaryDetailsItem}>
                               <div>Garage</div>
-                              <div>{this.props.requestedProduct.info.numbGarage}</div>
+                              <div>{this.props.requestedProduct.info.garage}</div>
                         </div>
                     </div>
               </section>

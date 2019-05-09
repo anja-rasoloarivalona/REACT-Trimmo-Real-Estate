@@ -21,7 +21,7 @@ export const products = [
             baths: 2,
             garage: 2,
             kitchen: 2,
-            "AC Roms": 4,
+            "AC Rooms": 4,
             "Swimming Pool": "yes",
             "Party Rooms": "yes", 
             balcony: "yes",
