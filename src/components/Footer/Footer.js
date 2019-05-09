@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import classes from './Footer.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import ReactSVG from 'react-svg';
+import * as actionTYpes from '../../store/actions';
 
 import Title from '../../components/UI/Title/Title'
 import logo from '../../assets/img/logo.png';
@@ -11,7 +12,7 @@ import facebook from '../../assets/icon/SVG/facebook.svg';
 import twitter from '../../assets/icon/SVG/twitter.svg';
 import linkedin from '../../assets/icon/SVG/linkedin2.svg';
 import google from '../../assets/icon/SVG/google-plus.svg';
-import Properties from '../../containers/Properties/Properties';
+
 
 
 class Footer extends Component {
@@ -45,7 +46,13 @@ class Footer extends Component {
                 <section className={classes.RecentPropertyGallery}>
                     {
                         properties.map (item => {
-                            return <img src={item.mainImg} alt="img" className={classes.Img}/>
+                            return (
+                                <Link to={`/details/${item.id}`} 
+                                      className={classes.ImgContainer} 
+                                      key={item.id}
+                                      onClick={() => this.props.onRequestedId(item.id)}>
+                                    <img src={item.mainImg} alt="img" className={classes.Img}/>
+                                </Link>)
                         })
                     }
                 </section>
@@ -80,4 +87,10 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps)(Footer)
+const mapDispatchToProps = dispatch => {
+    return {
+        onRequestedId: (item) => dispatch({type: actionTYpes.GET_ITEM, payload: item})
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Footer)

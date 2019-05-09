@@ -25,10 +25,8 @@ class App extends Component {
               <Route exact path="/" component={Home}></Route>
               <Route path="/about" component={About}></Route>
               <Route path="/properties" component={Properties}></Route>
-              <Route path={`/details/:propertyId`} render={props => <Details {...props}/>}></Route>
+              <Route path={`/details/:id`} render={props => <Details {...props}/>}></Route>
             <Footer />
-            
-
       </Layout>
     )
   }

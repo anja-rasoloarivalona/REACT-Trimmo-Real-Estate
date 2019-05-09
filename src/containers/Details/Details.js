@@ -19,8 +19,12 @@ import circle from '../../assets/icon/SVG/circle-right.svg';
 class Details extends Component {
 
       componentDidMount() {
-            window.scrollTo(0, 0)
+            window.scrollTo(0, 0);
           }
+      
+      componentDidUpdate() {
+            window.scrollTo(0, 0);
+      }
  
   render() {    
       let tempInfo = this.props.requestedProduct.info;
