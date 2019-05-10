@@ -98,7 +98,7 @@
     margin: .5rem 0;
     text-transform: uppercase;
     font-size: 1.3rem;
-    color: var(--color-primary);
+    color: var(--color-secondary);
     cursor: pointer;
 }
 

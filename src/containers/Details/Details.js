@@ -20,11 +20,17 @@ class Details extends Component {
 
       componentDidMount() {
             window.scrollTo(0, 0);
+            console.log("[DETAILS]",this.props);
           }
       
       componentDidUpdate() {
             window.scrollTo(0, 0);
+            console.log("[DETAILS]",this.props);
       }
+
+
+
+
  
   render() {    
       let tempInfo = this.props.requestedProduct.info;
