@@ -174,7 +174,7 @@ export const products = [
         lng: -75.789472,
         title: "Modern residence",
         infoWindow: "Modern residence",
-        mainImg: "/img/properties/property06/img01.jpg",
+        mainImg: "/img/properties/property07/img01.jpg",
         address: {
             fullAddress: "2725 Queensview Dr, Ottawa ON, K2B 0A1",
             streetNumber: 2725,
@@ -201,7 +201,7 @@ export const products = [
         lng: -75.607377,
         title: "Awesome Condo",
         infoWindow: "Awesome Condo",
-        mainImg: "/img/properties/property06/img01.jpg",
+        mainImg: "/img/properties/property08/img01.jpg",
         address: {
             fullAddress: "2730 Lancaster Rd, Ottawa ON, K1B 4S4",
             streetNumber: 2730,
@@ -228,7 +228,7 @@ export const products = [
         lng: -75.652116,
         title: "Unique Condo",
         infoWindow: "Unique Condo",
-        mainImg: "/img/properties/property06/img01.jpg",
+        mainImg: "/img/properties/property09/img01.jpg",
         address: {
             fullAddress: "1640 Kilborn Avenue, Ottawa ON, K1H 8L8",
             streetNumber: 1640,
@@ -255,7 +255,7 @@ export const products = [
         lng: -75.653656,
         title: "Stunning Appartment",
         infoWindow: "Stunning appartment",
-        mainImg: "/img/properties/property06/img01.jpg",
+        mainImg: "/img/properties/property010/img01.jpg",
         address: {
             fullAddress: "391 Montfort Street, Ottawa ON, K1L 8G8",
             streetNumber: 2134,
@@ -282,7 +282,7 @@ export const products = [
         lng: -75.685375,
         title: "Sophisticated Appartment",
         infoWindow: "Sophisticated Appartment",
-        mainImg: "/img/properties/property06/img01.jpg",
+        mainImg: "/img/properties/property011/img01.jpg",
         address: {
             fullAddress: "45 Argyle Avenue, Ottawa ON, K2P 1B3",
             streetNumber: 45,
@@ -309,7 +309,7 @@ export const products = [
         lng: -75.702088,
         title: "Elegant Apartment",
         infoWindow: "Elegant Apartment",
-        mainImg: "/img/properties/property06/img01.jpg",
+        mainImg: "/img/properties/property012/img01.jpg",
         address: {
             fullAddress: "600 Gilmour Street, Ottawa ON, K1R 5L8",
             streetNumber: 600,
@@ -336,7 +336,7 @@ export const products = [
         lng: -75.702577,
         title: "Outstanding Apartment",
         infoWindow: "Outstanding Apartment",
-        mainImg: "/img/properties/property06/img01.jpg",
+        mainImg: "/img/properties/property013/img01.jpg",
         address: {
             fullAddress: "407 Avenue Laurier Ouest, Ottawa ON, K1R 7Y7",
             streetNumber: 407,
@@ -363,7 +363,7 @@ export const products = [
         lng: -71.246658,
         title: "Exceptional Apartment",
         infoWindow: "Exceptional Apartment",
-        mainImg: "/img/properties/property06/img01.jpg",
+        mainImg: "/img/properties/property014/img01.jpg",
         address: {
             fullAddress: "257 Rue Marie-Louise, Quebec QC, G1N 3H6",
             streetNumber: 257,
@@ -390,7 +390,7 @@ export const products = [
         lng: -71.221050,
         title: "Modern Condo",
         infoWindow: "Modern Condo",
-        mainImg: "/img/properties/property06/img01.jpg",
+        mainImg: "/img/properties/property015/img01.jpg",
         address: {
             fullAddress: "495 Rue Saint-Gabriel, Quebec QC, H2B 1X2",
             streetNumber: 495,
@@ -417,11 +417,11 @@ export const products = [
         lng: -71.220619,
         title: "Exclusive Condo",
         infoWindow: "Exclusive Condo",
-        mainImg: "/img/properties/property06/img01.jpg",
+        mainImg: "/img/properties/property016/img01.jpg",
         address: {
             fullAddress: "600 Rue Saint-Olivier, Quebec QC, G1R 1H2",
-            streetNumber: 2134,
-            streetName: "Boulevard Gouin Est",
+            streetNumber: 600,
+            streetName: "Rue Saint-Olivier",
             city: "Quebec",
             province: "QC",
             postalCode: "G1R 1H2"},
@@ -444,7 +444,7 @@ export const products = [
         lng: -71.312787,
         title: "Sophisticated Residence",
         infoWindow: "Sophisticated Residence",
-        mainImg: "/img/properties/property06/img01.jpg",
+        mainImg: "/img/properties/property017/img01.jpg",
         address: {
             fullAddress: "3821 Rue Jacques Crépeault, Quebec QC, G1P 2E2",
             streetNumber: 3821,
@@ -471,7 +471,7 @@ export const products = [
         lng: -73.626070,
         title: "Awesome Condo",
         infoWindow: "Awesome Condo",
-        mainImg: "/img/properties/property06/img01.jpg",
+        mainImg: "/img/properties/property018/img01.jpg",
         address: {
             fullAddress: "8300 Rue Saint Gérard, Montreal QC, H2P 2C9",
             streetNumber: 8300 ,
@@ -498,7 +498,7 @@ export const products = [
         lng: -73.607062,
         title: "English Style Residence",
         infoWindow: "English Style Residence",
-        mainImg: "/img/properties/property06/img01.jpg",
+        mainImg: "/img/properties/property019/img01.jpg",
         address: {
             fullAddress: "8 Avenue Courcelette, Montreal QC, H2V 3A6",
             streetNumber: 8,
@@ -525,7 +525,7 @@ export const products = [
         lng: -73.632168,
         title: "Neoclassical Style",
         infoWindow: "Neoclassical Style",
-        mainImg: "/img/properties/property06/img01.jpg",
+        mainImg: "/img/properties/property020/img01.jpg",
         address: {
             fullAddress: "4900 Boulevard Edouard-Montpetit, Montreal QC, H3W 1R1",
             streetNumber: 2134,
