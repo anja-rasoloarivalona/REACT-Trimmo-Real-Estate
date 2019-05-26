@@ -33,7 +33,7 @@ import * as actionTypes from '../../../store/actions';
                 onChange={ (val) => {this.props.onRequestType(val.target.value)}}>    
 
                 <option>House</option>
-                <option>Appartment</option>
+                <option>Apartment</option>
                 <option>Condo</option>
             </select>
         </div>
