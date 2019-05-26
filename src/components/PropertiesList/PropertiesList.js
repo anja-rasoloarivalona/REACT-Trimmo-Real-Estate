@@ -20,9 +20,18 @@ class PropertiesList extends Component {
         let properties = this.props.properties;
 
         properties = properties.filter(item => {
-        return item.info.type == this.props.searchedProduct.type
-      
-      })
+        
+        if(this.props.searchedProduct.type == 'All types') {
+                return item.info.type !== ''
+        } else {
+                return item.info.type == this.props.searchedProduct.type
+        }             
+        })
+
+
+        properties = properties.filter(item => {
+            return item.address.city == this.props.searchedProduct.location
+        })
 
       return (
           <div className={classes.PropertiesList}>

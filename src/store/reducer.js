@@ -4,7 +4,7 @@ import {products} from '../data';
 const initialState = {
     products: products,
     requestedProduct: products[0],
-    
+
     searchedProduct : {
         location: 'Montreal',
         type: 'House',
@@ -25,14 +25,10 @@ const reducer = (state = initialState, action) => {
             let product = ''
             state.products.map(item => {
                 if(item.id === action.payload) {
-                    console.log(item)
-                 return  product = item
-                }
-            })
+                 return  product = item}})
             return {
                 ...state,
-                requestedProduct: product
-            }
+                requestedProduct: product}
         
         case actionTypes.GET_ITEM_TYPE :
             return {
@@ -41,7 +37,16 @@ const reducer = (state = initialState, action) => {
                     ...state.searchedProduct,
                     type: action.payload
                 }
-            }
+        }
+
+        case actionTypes.GET_ITEM_LOCATION : 
+            return {
+                ...state,
+                    searchedProduct : {
+                        ...state.searchedProduct,
+                        location: action.payload
+                    }
+        }
             
             
 

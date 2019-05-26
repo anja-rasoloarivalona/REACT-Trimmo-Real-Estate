@@ -16,7 +16,9 @@ import * as actionTypes from '../../../store/actions';
         
         <div className={classes.Input + ' ' + classes.Location}>
             <label htmlFor={classes.Location}>Location</label>
-            <select className={classes.InputField}>
+            <select className={classes.InputField}
+                    value={this.props.searchedProduct.city}
+                    onChange={ (val) => {this.props.onRequestLocation(val.target.value)}}>
                 <option>Montreal</option>
                 <option>Quebec</option>
                 <option>Ottawa</option>
@@ -31,7 +33,7 @@ import * as actionTypes from '../../../store/actions';
                 className={classes.InputField}
                 value={this.props.searchedProduct.type}
                 onChange={ (val) => {this.props.onRequestType(val.target.value)}}>    
-
+                <option>All types</option>
                 <option>House</option>
                 <option>Apartment</option>
                 <option>Condo</option>
@@ -83,7 +85,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onRequestType: (item) => dispatch({type: actionTypes.GET_ITEM_TYPE, payload: item})
+        onRequestType: (item) => dispatch({type: actionTypes.GET_ITEM_TYPE, payload: item}),
+        onRequestLocation: (item) => dispatch({type: actionTypes.GET_ITEM_LOCATION, payload: item})
     }
 }
 
