@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import classes from './PropertiesForm.css';
+import { connect } from 'react-redux';
+import * as actionTypes from '../../../store/actions';
 
  class PropertiesForm extends Component {
+
 
   render() {
     return (
@@ -20,25 +23,32 @@ import classes from './PropertiesForm.css';
             </select>
         </div>
 
+
         <div className={classes.Input + ' ' + classes.Type}>
             <label htmlFor={classes.Type}>Types</label>
-            <select className={classes.InputField}>    
-                <option>All types</option>
+
+            <select 
+                className={classes.InputField}
+                value={this.props.searchedProduct.type}
+                onChange={ (val) => {this.props.onRequestType(val.target.value)}}>    
+
                 <option>House</option>
                 <option>Appartment</option>
                 <option>Condo</option>
             </select>
         </div>
 
+
+
         <div className={classes.Input + ' ' + classes.Min}>
             <label htmlFor={classes.Min}>Min</label>
-            <input type="text" placeholder="price" className={classes.InputField}/>
+            <input type="number" placeholder="price" className={classes.InputField}/>
         </div>
         
 
         <div className={classes.Input + ' ' + classes.Max}>
             <label htmlFor={classes.Max}>Max</label>
-            <input type="text" placeholder="price" className={classes.InputField}/>
+            <input type="number" placeholder="price" className={classes.InputField}/>
         </div>
 
         <div className={classes.Input + ' ' + classes.Bathroom}>
@@ -65,4 +75,16 @@ import classes from './PropertiesForm.css';
   }
 }
 
-export default PropertiesForm;
+const mapStateToProps = state => {
+    return  {
+        searchedProduct : state.searchedProduct 
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onRequestType: (item) => dispatch({type: actionTypes.GET_ITEM_TYPE, payload: item})
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(PropertiesForm);

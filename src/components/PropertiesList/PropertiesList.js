@@ -3,14 +3,30 @@ import { connect } from 'react-redux';
 import classes from './PropertiesList.css';
 import Property from './Property/Property';
 
-import * as actionTYpes from '../../store/actions';
+import * as actionTypes from '../../store/actions';
 
 class PropertiesList extends Component {
+
+    componentDidMount() {
+        console.log( this.props.searchedProduct);
+    }
+
+    componentDidUpdate() {
+        console.log( this.props.searchedProduct);
+    }
+
   render() {
-      let myproperties = [...this.props.properties];    
+
+        let properties = this.props.properties;
+
+        properties = properties.filter(item => {
+        return item.info.type == this.props.searchedProduct.type
+      
+      })
+
       return (
           <div className={classes.PropertiesList}>
-            {myproperties.map(item => {
+            {properties.map(item => {
                 return <Property key={item.id}
                         price ={item.info.price}
                         title ={item.title}
@@ -29,13 +45,14 @@ class PropertiesList extends Component {
 const mapStateToProps = state => {
     return  {
         properties: state.products,
-        requestedProduct: state.requestedProduct
+        requestedProduct: state.requestedProduct,
+        searchedProduct: state.searchedProduct
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
-        onRequestedId: (item) => dispatch({type: actionTYpes.GET_ITEM, payload: item})
+        onRequestedId: (item) => dispatch({type: actionTypes.GET_ITEM, payload: item})
     }
 }
 

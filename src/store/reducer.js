@@ -3,7 +3,16 @@ import {products} from '../data';
 
 const initialState = {
     products: products,
-    requestedProduct: products[0]
+    requestedProduct: products[0],
+    
+    searchedProduct : {
+        location: 'Montreal',
+        type: 'House',
+        minPrice: 0,
+        maxPrice: 999999999999,
+        numbBath: 1,
+        numbBed: 1
+    }
 }
 
 
@@ -23,9 +32,16 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 requestedProduct: product
-
             }
-                    
+        
+        case actionTypes.GET_ITEM_TYPE :
+            return {
+                ...state,
+                searchedProduct : {
+                    ...state.searchedProduct,
+                    type: action.payload
+                }
+            }
             
             
 

@@ -15,6 +15,7 @@ export const products = [
             province: "QC",
             postalCode: " H2J 4G3"},      
         info: {
+            type: 'House',
             price: "25 000 000",
             surface: 450,
             beds: 2,
@@ -43,6 +44,7 @@ export const products = [
             province: "QC",
             postalCode: "H3A 3C2"},  
         info: {
+            type: 'Appartment',
             price: "4 325 000",
             surface: 350,
             beds: 2,
@@ -69,6 +71,7 @@ export const products = [
             province: "QC",
             postalCode: "H2Z 1L7"},
         info: {
+            type: 'Appartment',
             price: "6 400 000",
             surface: 550,
             beds: 4,
@@ -95,6 +98,7 @@ export const products = [
             province: "QC",
             postalCode: "H3Z 2E7"},
         info: {
+            type: 'Condo',
             price: "13 470 000",
             surface: 450,
             beds: 5,
@@ -124,6 +128,7 @@ export const products = [
             postalCode: " H1T 1Z3",
         },
         info: {
+            type: 'House',
             price: "17 890 000",
             surface: 670,
             beds: 2,
@@ -151,6 +156,7 @@ export const products = [
             province: "QC",
             postalCode: " H2B 1X2"},
         info : {
+            type: 'House',
             price: "21 500 000",
             surface: 950,
             beds: 6,
