@@ -6,12 +6,13 @@ const initialState = {
     requestedProduct: products[0],
 
     searchedProduct : {
-        location: 'Montreal',
-        type: 'House',
+        location: 'All locations',
+        type: 'All types',
         minPrice: 0,
         maxPrice: 999999999999,
-        numbBath: 1,
-        numbBed: 1
+        bath: 1,
+        bed: 1,
+
     }
 }
 
@@ -45,6 +46,24 @@ const reducer = (state = initialState, action) => {
                     searchedProduct : {
                         ...state.searchedProduct,
                         location: action.payload
+                    }
+        }
+
+        case actionTypes.GET_ITEM_BATH : 
+            return {
+                ...state,
+                    searchedProduct : {
+                        ...state.searchedProduct,
+                        bath: action.payload
+                    }
+        }
+
+        case actionTypes.GET_ITEM_BED : 
+            return {
+                ...state,
+                    searchedProduct : {
+                        ...state.searchedProduct,
+                        bed: action.payload
                     }
         }
             

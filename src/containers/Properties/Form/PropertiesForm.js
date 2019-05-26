@@ -17,8 +17,9 @@ import * as actionTypes from '../../../store/actions';
         <div className={classes.Input + ' ' + classes.Location}>
             <label htmlFor={classes.Location}>Location</label>
             <select className={classes.InputField}
-                    value={this.props.searchedProduct.city}
+                    value={this.props.searchedProduct.location}
                     onChange={ (val) => {this.props.onRequestLocation(val.target.value)}}>
+                <option>All locations</option>
                 <option>Montreal</option>
                 <option>Quebec</option>
                 <option>Ottawa</option>
@@ -55,20 +56,24 @@ import * as actionTypes from '../../../store/actions';
 
         <div className={classes.Input + ' ' + classes.Bathroom}>
             <label htmlFor={classes.Bathroom}>Bathrooms</label>
-            <select className={classes.InputField}>          
-                <option>+1</option>
-                <option>+2</option>
-                <option>+3</option>
+            <select className={classes.InputField}
+                    value={this.props.searchedProduct.bath}
+                    onChange={ (val) => {this.props.onRequestBath(val.target.value)}}>          
+                <option value={1}>+1</option>
+                <option value={2}>+2</option>
+                <option value={3}>+3</option>
             </select>
         </div>
         
 
         <div className={classes.Input + ' ' + classes.Bedroom}>
             <label htmlFor={classes.Bedroom}>Bedrooms</label>
-            <select className={classes.InputField}>          
-                <option>+1</option>
-                <option>+2</option>
-                <option>+3</option>
+            <select className={classes.InputField}
+                    value={this.props.searchedProduct.bed}
+                    onChange={ (val) => {this.props.onRequestBed(val.target.value)}}>          
+                <option value={1}>+1</option>
+                <option value={2}>+2</option>
+                <option value={3}>+3</option>
             </select>
         </div>
 
@@ -86,7 +91,9 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         onRequestType: (item) => dispatch({type: actionTypes.GET_ITEM_TYPE, payload: item}),
-        onRequestLocation: (item) => dispatch({type: actionTypes.GET_ITEM_LOCATION, payload: item})
+        onRequestLocation: (item) => dispatch({type: actionTypes.GET_ITEM_LOCATION, payload: item}),
+        onRequestBath: (item) => dispatch({type: actionTypes.GET_ITEM_BATH, payload: item}),
+        onRequestBed: (item) => dispatch({type: actionTypes.GET_ITEM_BED, payload: item})
     }
 }
 
