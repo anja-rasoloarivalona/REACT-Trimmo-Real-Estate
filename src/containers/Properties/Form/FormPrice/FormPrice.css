@@ -1,0 +1,34 @@
+.FormGroup {
+    width: 25%;
+    margin: 0 2rem;
+}
+
+.InputField {
+    /* width: 17rem;*/
+     width: 55%;
+     height: 3.7rem;
+     border-radius: 1px;
+     border: none;
+     padding-left: .5rem;
+     outline: none;
+ }
+ 
+ .InputField:focus {
+     border: 2px solid var(--color-primary);
+ 
+ }
+ 
+ .Input {
+   /*  height: 100%;*/
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 2.5rem;
+     margin: .6rem;   
+ }
+ 
+ .Input label {
+     font-size: 1.2rem;
+     color: var(--color-white);   
+ }

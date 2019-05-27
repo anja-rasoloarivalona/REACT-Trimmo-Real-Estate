@@ -50,6 +50,14 @@ class PropertiesList extends Component {
             return item.info.beds > (this.props.searchedProduct.bed - 1)
         })
 
+        properties = properties.filter(item => {
+            return item.info.price > this.props.searchedProduct.min 
+        })
+
+        properties = properties.filter(item => {
+            return item.info.price < this.props.searchedProduct.max
+        })
+
 
 
 

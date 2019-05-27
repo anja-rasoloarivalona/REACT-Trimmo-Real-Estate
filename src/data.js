@@ -16,7 +16,7 @@ export const products = [
             postalCode: " H2J 4G3"},      
         info: {
             type: 'House',
-            price: "25 000 000",
+            price: 2200000,
             surface: 450,
             beds: 2,
             baths: 2,
@@ -45,7 +45,7 @@ export const products = [
             postalCode: "H3A 3C2"},  
         info: {
             type: 'Apartment',
-            price: "4 325 000",
+            price: 300000,
             surface: 350,
             beds: 2,
             baths: 1,
@@ -72,7 +72,7 @@ export const products = [
             postalCode: "H2Z 1L7"},
         info: {
             type: 'Apartment',
-            price: "6 400 000",
+            price: 640000,
             surface: 550,
             beds: 4,
             baths: 2,
@@ -99,7 +99,7 @@ export const products = [
             postalCode: "H3Z 2E7"},
         info: {
             type: 'Condo',
-            price: "13 470 000",
+            price: 1470000,
             surface: 450,
             beds: 5,
             baths: 3,
@@ -129,7 +129,7 @@ export const products = [
         },
         info: {
             type: 'House',
-            price: "17 890 000",
+            price: "2390000",
             surface: 670,
             beds: 2,
             baths: 2,
@@ -157,7 +157,7 @@ export const products = [
             postalCode: "H2B 1X2"},
         info : {
             type: 'House',
-            price: "21 500 000",
+            price: 125000,
             surface: 950,
             beds: 6,
             baths: 3,
@@ -184,7 +184,7 @@ export const products = [
             postalCode: "K2B 0A1"},
         info : {
             type: 'House',
-            price: "21 500 000",
+            price: 560000,
             surface: 950,
             beds: 6,
             baths: 3,
@@ -211,7 +211,7 @@ export const products = [
             postalCode: "K1B 4S4"},
         info : {
             type: 'Condo',
-            price: "21 500 000",
+            price: 1500000,
             surface: 950,
             beds: 6,
             baths: 3,
@@ -238,7 +238,7 @@ export const products = [
             postalCode: "K1H 8L8"},
         info : {
             type: 'Condo',
-            price: "21 500 000",
+            price: 450000,
             surface: 950,
             beds: 6,
             baths: 3,
@@ -265,7 +265,7 @@ export const products = [
             postalCode: "K1L 8G8"},
         info : {
             type: 'Apartment',
-            price: "21 500 000",
+            price: 1150000,
             surface: 950,
             beds: 6,
             baths: 3,
@@ -292,7 +292,7 @@ export const products = [
             postalCode: "K2P 1B3"},
         info : {
             type: 'Apartment',
-            price: "21 500 000",
+            price: 2500000,
             surface: 950,
             beds: 6,
             baths: 3,
@@ -319,7 +319,7 @@ export const products = [
             postalCode: "K1R 5L8"},
         info : {
             type: 'Apartment',
-            price: "21 500 000",
+            price: 475000,
             surface: 950,
             beds: 6,
             baths: 3,
@@ -346,7 +346,7 @@ export const products = [
             postalCode: "K1R 7Y7"},
         info : {
             type: 'Apartment',
-            price: "21 500 000",
+            price: 3200000,
             surface: 950,
             beds: 6,
             baths: 3,
@@ -373,7 +373,7 @@ export const products = [
             postalCode: "G1N 3H6"},
         info : {
             type: 'Apartment',
-            price: "21 500 000",
+            price: 1080000,
             surface: 950,
             beds: 6,
             baths: 3,
@@ -400,7 +400,7 @@ export const products = [
             postalCode: " H2B 1X2"},
         info : {
             type: 'Condo',
-            price: "21 500 000",
+            price: 3500000,
             surface: 950,
             beds: 6,
             baths: 3,
@@ -427,7 +427,7 @@ export const products = [
             postalCode: "G1R 1H2"},
         info : {
             type: 'Condo',
-            price: "21 500 000",
+            price: 750000,
             surface: 950,
             beds: 6,
             baths: 3,
@@ -454,7 +454,7 @@ export const products = [
             postalCode: " G1P 2E2"},
         info : {
             type: 'Condo',
-            price: "21 500 000",
+            price: 1430000,
             surface: 950,
             beds: 6,
             baths: 3,
@@ -481,7 +481,7 @@ export const products = [
             postalCode: "H2P 2C9"},
         info : {
             type: 'Condo',
-            price: "21 500 000",
+            price: 2150000,
             surface: 950,
             beds: 6,
             baths: 3,
@@ -508,7 +508,7 @@ export const products = [
             postalCode: "H2V 3A6"},
         info : {
             type: 'House',
-            price: "21 500 000",
+            price: 3200000,
             surface: 950,
             beds: 6,
             baths: 3,
@@ -535,7 +535,7 @@ export const products = [
             postalCode: "H3W 1R1"},
         info : {
             type: 'House',
-            price: "21 500 000",
+            price: 325000,
             surface: 950,
             beds: 6,
             baths: 3,

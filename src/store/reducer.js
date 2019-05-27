@@ -8,11 +8,10 @@ const initialState = {
     searchedProduct : {
         location: 'All locations',
         type: 'All types',
-        minPrice: 0,
-        maxPrice: 999999999999,
+        min: 0,
+        max: 10000000,
         bath: 1,
         bed: 1,
-
     }
 }
 
@@ -66,7 +65,30 @@ const reducer = (state = initialState, action) => {
                         bed: action.payload
                     }
         }
+        
+        case actionTypes.GET_ITEM_MIN :         
+                return {
+                    ...state,
+                        searchedProduct : {
+                            ...state.searchedProduct,
+                            min: parseInt(action.payload)
+                        }
+                }
+
+ 
+
             
+
+        case actionTypes.GET_ITEM_MAX : 
+            if(state.searchedProduct.max >= state.searchedProduct.min) {
+                return {
+                    ...state,
+                        searchedProduct : {
+                            ...state.searchedProduct,
+                            max: parseInt(action.payload)
+                        }
+                    }
+                } 
             
 
         default : return state;
