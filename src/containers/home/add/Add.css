@@ -1,0 +1,57 @@
+.Add {
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+    height: 25rem;  
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+
+.AddInfo1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 34rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.AddInfo2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.AddInfo1 div:first-child {
+    color: var(--color-secondary);
+    font-size: 2.5rem;
+    transform: translateX(35%);
+    
+}
+
+.AddInfo1 div:nth-child(2) {
+    color: var(--color-white);
+    font-size: 3rem;
+}
+
+.AddInfo2 div:first-child {
+    color: var(--color-white);
+    font-size: 3rem;
+}
+
+.AddInfo2 div:nth-child(2) {
+    color: var(--color-primary);
+    font-size: 3rem;
+    letter-spacing: 2px;
+}

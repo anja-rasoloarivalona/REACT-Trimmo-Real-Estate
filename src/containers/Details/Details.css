@@ -13,6 +13,9 @@
     height: calc(100vh - 11rem);
     grid-row: 1 / 2;
     grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-content: center;
     position: relative;
 }
 
@@ -21,6 +24,7 @@
     padding: 1rem 2rem;
     background: var(--color-secondary);
     width: 40%;
+    position: absolute;
 
 }
 

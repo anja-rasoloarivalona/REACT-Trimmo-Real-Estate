@@ -1,0 +1,64 @@
+.About {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    height: 70vh;
+    display: flex;
+    margin-top: 5rem;
+}
+
+.AboutText {
+    width:60%;
+}
+
+.AboutTitleContainer {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 4rem;
+}
+
+.AboutImgContainer {
+    width:40%;
+    position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+    .AboutImgContainer {
+      display: none;
+    }
+}
+  
+.AboutTitle1 {
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.AboutTitle2 {
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.AboutSubTitle {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.AboutImg {
+    height: 60%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.AboutPara {
+    padding-left: 4rem;
+    font-size: 1.3rem;
+    margin: 2rem 0;
+}
