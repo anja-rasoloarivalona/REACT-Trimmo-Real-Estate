@@ -63,11 +63,10 @@ class Map extends Component {
                     icon: "http://www.codeshare.co.uk/images/blue-pin.png"
                   })
               
-              let contentString = '<section className={classes.Info}>' + 
-                  '<div> '+ item.title + ' </div>'+
-                  '<div>' + item.info.price+ '</div>'+
-                  '<a href=/details/' + item.id + '>see</a>'+
-                                    ' </section>'
+              let contentString = '<a href=/details/' + item.id + ' style="text-decoration:none; color:#101D2C">' +                                       
+                                       '<div style="text-align:center"> '+ item.title + ' </div>'+
+                                       '<div style="text-align:center">$ ' + item.info.price.toLocaleString()+ '</div>'+                                                        
+                                  '</a>'
 
 
               // Open InfowWindow on click
