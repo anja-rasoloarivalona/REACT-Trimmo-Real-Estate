@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import classes from './Form.css';
 import { connect } from 'react-redux';
-import * as actionTypes from '../../../store/actions'
+import * as actionTypes from '../../../store/actions';
+
+import { Link } from 'react-router-dom';
+
  class Form extends Component {
 
   render() {
@@ -111,7 +114,9 @@ import * as actionTypes from '../../../store/actions'
             </select>
         </div>
 
-        <input type="submit" value="Submit"></input>
+        <Link to='/properties' className={classes.Search}>
+            Search
+        </Link>
 
       </form>
     )
