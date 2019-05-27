@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import classes from './Form.css';
 import { connect } from 'react-redux';
 import * as actionTypes from '../../../store/actions';
-
+import { initialState } from '../../../store/reducer'; 
 import { Link } from 'react-router-dom';
+import { isEquivalent } from '../../../shared/compareInititalState';
 
  class Form extends Component {
 
@@ -25,6 +26,14 @@ import { Link } from 'react-router-dom';
 
     let max = this.props.searchedProduct.max;
     let min = this.props.searchedProduct.min;
+
+    let button = '';
+
+    if(isEquivalent(this.props.searchedProduct, initialState.searchedProduct)) {
+        button = 'See all'
+    } else {
+        button = 'Search'
+    }
 
     return (
 
@@ -115,7 +124,7 @@ import { Link } from 'react-router-dom';
         </div>
 
         <Link to='/properties' className={classes.Search}>
-            Search
+          {button}
         </Link>
 
       </form>

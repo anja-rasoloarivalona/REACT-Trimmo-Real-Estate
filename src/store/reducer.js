@@ -1,7 +1,7 @@
 import * as actionTypes from './actions';
 import {products} from '../data';
 
-const initialState = {
+export const initialState = {
     products: products,
     requestedProduct: products[0],
 
@@ -11,7 +11,7 @@ const initialState = {
         min: 0,
         max: 10000000,
         bath: 1,
-        bed: 1,
+        bed: 1
     }
 }
 
