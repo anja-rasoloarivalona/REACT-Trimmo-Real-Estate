@@ -96,6 +96,12 @@ const reducer = (state = initialState, action) => {
                     count: action.payload
                 }
 
+        case actionTypes.GET_URL :
+                return {
+                    ...state,
+                    requestedProduct: products[action.payload - 1]
+                }
+
         default : return state;
     }
    

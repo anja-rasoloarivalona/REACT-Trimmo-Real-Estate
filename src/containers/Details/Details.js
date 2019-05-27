@@ -3,10 +3,11 @@ import { connect } from 'react-redux';
 import classes from './Details.css';
 import Property from '../../components/PropertiesList/Property/Property';
 
+import * as actionTypes from '../../store/actions';
 
 import Form from '../home/form/Form';
 
-
+import History from '../../shared/history';
 
 import bg from '../../assets/img/bg.jpg';
 import Gallery from './Gallery/Gallery';
@@ -25,23 +26,36 @@ class Details extends Component {
 
       componentDidMount() {
             window.scrollTo(0, 0);
-            console.log("[DETAILS]",this.props);
+
+            let path = History.location.pathname
+            
+            let paths =[path.split('/')] 
+           
+       
+
+
+            let id = parseInt(paths[0][2]);
+ 
+            this.props.onRequestURL(id);
+
           }
       
       componentDidUpdate() {
             window.scrollTo(0, 0);
-            console.log("[DETAILS]",this.props);
+
       }
 
+     
 
 
 
  
   render() {    
+      
       let tempInfo = this.props.requestedProduct.info;
       let info = Object.keys(tempInfo).map(data => [data, tempInfo[data]])
       
-      console.log(info);
+   
       
 
    
@@ -205,7 +219,13 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps)(Details);
+const mapDispatchToProps = dispatch => {
+      return {
+          onRequestURL: (item) => dispatch({type: actionTypes.GET_URL, payload: item}),
+      }
+  }
+
+export default connect(mapStateToProps, mapDispatchToProps)(Details);
 /*
 <Property 
       

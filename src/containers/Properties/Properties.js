@@ -32,7 +32,7 @@ import { isEquivalent } from '../../shared/compareInititalState';
                     </div>
               </div>
               <div className={classes.MapContainer}>
-                {/*<Map />*/}
+                <Map />
               </div>
               
               <PropertiesList />

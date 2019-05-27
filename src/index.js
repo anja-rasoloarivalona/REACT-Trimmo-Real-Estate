@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import { BrowserRouter as Router} from 'react-router-dom';
+import { Router} from 'react-router-dom';
+
+import History from './shared/history';
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -13,7 +15,7 @@ const store = createStore(reducer);
 
 const app = ( 
     <Provider store={store}>
-        <Router>
+        <Router history={History}>
             <App />
         </Router>
     </Provider>

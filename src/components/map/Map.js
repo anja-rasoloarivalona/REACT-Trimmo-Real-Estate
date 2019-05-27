@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import classes from './Map.css';
 import { connect } from 'react-redux';
+import {Link} from 'react-router-dom';
 
 class Map extends Component {
 
@@ -13,6 +14,8 @@ class Map extends Component {
       window.initMap = this.initMap;
   }
 
+  
+
   initMap = () => {
    const map = new window.google.maps.Map(document.getElementById('map'),
         {
@@ -23,7 +26,7 @@ class Map extends Component {
         let markerInfos = [...this.props.products];
 
         // Create an InfoWindow
-        let infoWindow = new window.google.maps.InfoWindow()
+         let infoWindow = new window.google.maps.InfoWindow();
 
         //Display markers dynamically
         markerInfos.map(item => {             
@@ -32,12 +35,20 @@ class Map extends Component {
               let marker = new window.google.maps.Marker({
                     position: {lat: item.lat, lng: item.lng},
                     map: map,
-                    title: "Hello"
+                    icon: "http://www.codeshare.co.uk/images/blue-pin.png"
                   })
+              
+              let contentString = '<section className={classes.Info}>' + 
+                  '<div> '+ item.title + ' </div>'+
+                  '<div>' + item.info.price+ '</div>'+
+                  '<a href=/details/' + item.id + '>see</a>'+
+                                    ' </section>'
+
 
               // Open InfowWindow on click
               marker.addListener('click', () => {
-                infoWindow.setContent(item.infoWindow)
+                infoWindow.setContent(contentString)
+
                 infoWindow.open(map, marker);
                   })
           
