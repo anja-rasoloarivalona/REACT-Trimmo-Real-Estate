@@ -527,9 +527,9 @@ export const products = [
         infoWindow: "Neoclassical Style",
         mainImg: "/img/properties/property020/img01.jpg",
         address: {
-            fullAddress: "4900 Boulevard Edouard-Montpetit, Montreal QC, H3W 1R1",
+            fullAddress: "4900 Bv Edouard-Montpetit, Montreal QC, H3W 1R1",
             streetNumber: 2134,
-            streetName: "Boulevard Edouard-Montpetit",
+            streetName: "Bv Edouard-Montpetit",
             city: "Montreal",
             province: "QC",
             postalCode: "H3W 1R1"},

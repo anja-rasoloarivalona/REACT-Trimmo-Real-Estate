@@ -26,16 +26,9 @@ class Details extends Component {
 
       componentDidMount() {
             window.scrollTo(0, 0);
-
-            let path = History.location.pathname
-            
-            let paths =[path.split('/')] 
-           
-       
-
-
+            let path = History.location.pathname           
+            let paths =[path.split('/')]                
             let id = parseInt(paths[0][2]);
- 
             this.props.onRequestURL(id);
 
           }

@@ -9,6 +9,10 @@ class Map extends Component {
     this.renderMap()
   };
 
+  componentDidUpdate() {
+    this.renderMap()
+  }
+
   renderMap = () => {
       this.loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyDRoF3AQcn0aoVUEHOUwoQnWlgf-m60GWs&callback=initMap")
       window.initMap = this.initMap;
@@ -17,10 +21,31 @@ class Map extends Component {
   
 
   initMap = () => {
-   const map = new window.google.maps.Map(document.getElementById('map'),
+    let coords = [];
+    let zoom = '';
+
+    if(this.props.searchedProduct.location == 'All locations') {
+        zoom = 6
+        coords = [45.504385, -72.564356]
+    } else {
+      if(this.props.searchedProduct.location == 'Montreal') {
+        zoom = 11
+        coords = [45.50884, -73.58781]
+      } else {
+        if(this.props.searchedProduct.location == 'Ottawa') {
+          zoom = 11
+          coords = [45.399467, -75.707121]
+        } else {
+          zoom = 11 
+          coords = [46.827081, -71.206457]
+        }
+      }
+    } 
+
+    const map = new window.google.maps.Map(document.getElementById('map'),
         {
-            center: {lat: 45.50884, lng: -73.58781},
-            zoom: 12
+            center: {lat: coords[0], lng: coords[1]},
+            zoom: zoom
         });
 
         let markerInfos = [...this.props.products];
@@ -78,7 +103,9 @@ class Map extends Component {
 
 const mapStateToProps = state => {
   return {
-    products: state.products
+    products: state.products,
+    searchedProduct : state.searchedProduct
+
   }
 }
 
