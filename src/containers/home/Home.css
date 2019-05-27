@@ -5,13 +5,14 @@
     grid-template-columns: 1fr 87vw 1fr;
     grid-template-rows: max-content;
     grid-auto-rows: max-content;
+    width: 100vw;
 }
 
 .Home {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     position: relative;
-    width: 100vw; 
+    width: 100%; 
     height: calc(100vh - 11rem);  
 }
 
@@ -41,6 +42,12 @@
     position: relative;
 }
 
+@media screen and (max-width: 1200px) {
+    .AboutImgContainer {
+      display: none;
+    }
+}
+  
 .AboutTitle1 {
     font-size: 5rem;
     font-weight: 600;
@@ -82,6 +89,12 @@
     display: flex;
     justify-content: space-around;
     position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+    .Add {
+      display: none;
+    }
 }
 
 .AddInfo1 {
@@ -172,6 +185,8 @@
     height: 75vh;
     grid-column: 1 / -1;
     grid-row: 6 / 7;
+
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,9 +221,17 @@
 
 
 .AdvantageContent{
-    display: flex;
+    background: red;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 27rem);
+    grid-template-rows: repeat(auto-fit, 25rem);
+    grid-auto-rows: 25rem;
     align-items: center;
+    justify-items: center;
     justify-content: center;
+    align-content: center;
+
 
 }
 
@@ -216,8 +239,6 @@
     width: 25rem;
     height: 24rem;
     background: var(--color-white);
-    margin: 0 2rem;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,6 +273,12 @@
     grid-row: 7 / 8;
     padding: 5rem 0;
     margin: 3rem 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .Agent {
+      display: none;
+    }
 }
 
 .AgentTitle {

@@ -3,4 +3,7 @@
     grid-template-columns: 1fr 87vw 1fr;
     grid-template-rows: 11rem max-content calc(100vh - 11rem);
     width: 100vw;   
+
+    overflow-X: hidden;
+
 }

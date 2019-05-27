@@ -26,12 +26,20 @@
 
 html {
   font-size: 62.5%;
+  width: 100%;
+  overflow-X: hidden;
 }
 
 
 body {
   box-sizing: border-box;
   font-family: var(--defaultFont);
-  overflow-X: hidden;
+  width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+  html {
+    font-size: 50%;
+  }
 }
 

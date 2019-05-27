@@ -88,7 +88,7 @@ render() {
                 </p>
             </div>
             
-            <PropertiesList />
+           {/* <PropertiesList />*/}
             <div className={classes.PropertiesCTA}>
                 <button>MORE PROPERTIES</button>
             </div>
