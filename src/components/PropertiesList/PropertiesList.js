@@ -7,13 +7,7 @@ import * as actionTypes from '../../store/actions';
 
 class PropertiesList extends Component {
 
-    componentDidMount() {
-        console.log( this.props.searchedProduct);
-    }
-
-    componentDidUpdate() {
-        console.log( this.props.searchedProduct);
-    }
+   
 
   render() {
 
@@ -59,7 +53,12 @@ class PropertiesList extends Component {
         })
 
 
-
+        let count = properties.length;
+        
+        this.props.onRequestCount(count);
+        
+        
+      
 
       return (
           <div className={classes.PropertiesList}>
@@ -83,13 +82,15 @@ const mapStateToProps = state => {
     return  {
         properties: state.products,
         requestedProduct: state.requestedProduct,
-        searchedProduct: state.searchedProduct
+        searchedProduct: state.searchedProduct,
+        count : state.count
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
-        onRequestedId: (item) => dispatch({type: actionTypes.GET_ITEM, payload: item})
+        onRequestedId: (item) => dispatch({type: actionTypes.GET_ITEM, payload: item}),
+        onRequestCount: (item) => dispatch({type: actionTypes.GET_COUNT, payload: item})
     }
 }
 

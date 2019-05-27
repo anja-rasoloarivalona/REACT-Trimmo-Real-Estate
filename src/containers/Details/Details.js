@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import classes from './Details.css';
 import Property from '../../components/PropertiesList/Property/Property';
-import Form from './DetailsForm/DetailsForm';
+
+
+import Form from '../home/form/Form';
+
+
+
 import bg from '../../assets/img/bg.jpg';
 import Gallery from './Gallery/Gallery';
 

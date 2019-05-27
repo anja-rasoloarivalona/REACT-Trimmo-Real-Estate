@@ -4,7 +4,7 @@ import {products} from '../data';
 export const initialState = {
     products: products,
     requestedProduct: products[0],
-
+    count : products.length,
     searchedProduct : {
         location: 'All locations',
         type: 'All types',
@@ -89,7 +89,12 @@ const reducer = (state = initialState, action) => {
                         }
                     }
                 } 
-            
+        
+        case actionTypes.GET_COUNT :
+                return {
+                    ...state,
+                    count: action.payload
+                }
 
         default : return state;
     }

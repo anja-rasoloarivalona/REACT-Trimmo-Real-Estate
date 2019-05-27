@@ -10,4 +10,6 @@ export const GET_ITEM_MIN = 'GET_ITEM_MIN';
 
 export const GET_ITEM_MAX = 'GET_ITEM_MAX';
 
+export const GET_COUNT = 'GET_COUNT'
+
 
