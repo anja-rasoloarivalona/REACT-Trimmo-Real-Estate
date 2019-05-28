@@ -18,7 +18,7 @@ import google from '../../assets/icon/SVG/google-plus.svg';
 class Footer extends Component {
   render() {
       let properties = [...this.props.properties];
-
+     
     return (
       <footer className={classes.Footer}>
 
@@ -45,7 +45,7 @@ class Footer extends Component {
 
                 <section className={classes.RecentPropertyGallery}>
                     {
-                        properties.map (item => {
+                        properties.slice(0, 9).map (item => {
                             return (
                                 <Link to={`/details/${item.id}`} 
                                       className={classes.ImgContainer} 
