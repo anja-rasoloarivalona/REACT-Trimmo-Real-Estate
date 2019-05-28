@@ -67,9 +67,6 @@ const navbar = () => {
                 <NavLink exact  to='/' className={classes.Link} activeClassName={classes.Active}>
                     Home
                 </NavLink >
-                <NavLink  to='/about' className={classes.Link} activeClassName={classes.Active}>
-                    About
-                </NavLink >
                 <NavLink  to='/properties' className={classes.Link} activeClassName={classes.Active}>
                     Properties
                 </NavLink >

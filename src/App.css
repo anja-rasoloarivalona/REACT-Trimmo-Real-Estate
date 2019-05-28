@@ -37,7 +37,14 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+
+@media screen and (max-width: 656px) {
   html {
     font-size: 50%;
   }

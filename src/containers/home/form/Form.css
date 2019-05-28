@@ -9,6 +9,12 @@
     margin-right: 10rem;
 }
 
+@media screen and (max-width: 450px) {
+    .Form {
+        margin-right: 0;
+    }
+}
+
 .Title {
     grid-row: 1 / 2;
     text-transform: uppercase;
