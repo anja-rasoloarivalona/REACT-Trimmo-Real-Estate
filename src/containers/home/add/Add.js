@@ -14,7 +14,7 @@ const add = () => {
             </div>
 
             <div className={classes.AddInfo2}>
-                <div>WE ARE READY TO RECEIVE YOUR CALL</div>
+                <div>CALL US</div>
                 <div>+1 514 123 1234</div>
             </div>
 

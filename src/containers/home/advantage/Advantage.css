@@ -38,7 +38,6 @@
 
 
 .AdvantageContent{
-    background: red;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 27rem);
@@ -48,9 +47,23 @@
     justify-items: center;
     justify-content: center;
     align-content: center;
-
-
 }
+
+
+@media screen and (max-width: 1135px) {
+    .AdvantageContent {
+      grid-template-columns: repeat(2, max-content);
+      grid-template-rows: repeat(2, max-content);
+      grid-gap: 2rem;
+    }
+
+    .Advantage {
+        height: 85vh;
+
+    }
+  }
+
+ 
 
 .AdvantageContentItem {
     width: 25rem;
@@ -61,6 +74,15 @@
     justify-content: center;
     flex-direction: column;
 }
+
+@media screen and (max-width: 490px) {
+    .AdvantageContentItem  {
+        width: 20rem;
+        height: 19rem;
+    }
+  
+
+  }
 
 .AdvantageContentItem p {
     text-align: center;
@@ -77,6 +99,18 @@
     border-radius: 50%;
     margin-bottom: 1.5rem;
     fill: var(--color-white);
+}
+
+@media screen and (max-width: 490px) {
+    .AdvantageIcon {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .AdvantageIcon div svg {
+        width: 2rem;
+        object-fit: cover;
+    }
 }
 
 .AdvantageContentItem div {

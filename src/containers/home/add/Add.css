@@ -4,31 +4,29 @@
     height: 25rem;  
     display: flex;
     justify-content: space-around;
-    position: relative;
+    align-items: center;
 }
+
+
 
 
 .AddInfo1 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 34rem;
-    margin: auto;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
 
+
 .AddInfo2 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 10rem;
-    margin: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+@media screen and (max-width: 1390px) {
+    .AddInfo2 {
+      transform: translateX(5%)
+    }
 }
 
 
@@ -54,4 +52,28 @@
     color: var(--color-primary);
     font-size: 3rem;
     letter-spacing: 2px;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .Add {
+        height: 18rem;
+    }
+
+    .AddInfo1 div:first-child {
+        font-size: 2rem;
+    }
+
+    .AddInfo1 div:nth-child(2) {
+        font-size: 2rem;
+    }
+
+    .AddInfo2 div:first-child {
+        font-size: 2rem;
+    }
+
+    .AddInfo2 div:nth-child(2) {
+        font-size: 2rem;
+    }
 }

@@ -56,7 +56,7 @@
 .AboutImgContainer {
     width:40%;
     position: relative;
-    background: red;
+
 }
 
   
@@ -86,6 +86,10 @@
     .About {
         align-items: center;
         justify-content: center;
+    }
+
+    .AboutText {
+        width: 75%;
     }
 
 
