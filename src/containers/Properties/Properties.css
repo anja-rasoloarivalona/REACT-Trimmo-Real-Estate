@@ -17,11 +17,23 @@
     font-weight: 600;  
     transform: translateX(7.7%);
     margin-top: 6rem;
+
 }
 
 .PropertiesTitle {
     display: flex;
 }
+
+@media screen and (max-width: 490px) {
+    .PropertiesTitleContainer {
+        transform: translateX(10%);
+        margin: 2rem 1rem;
+        margin-top: 6rem;
+        font-size: 3rem;
+    }
+}
+
+
 
 .PropertiesTitle div:first-child {
     color: var(--color-secondary);

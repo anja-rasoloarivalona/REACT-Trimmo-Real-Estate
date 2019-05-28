@@ -25,8 +25,30 @@
     background: var(--color-secondary);
     width: 40%;
     position: absolute;
-
 }
+
+@media screen and (max-width: 850px) {
+    .HeaderAddress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .Header{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+   
+}
+
+
+
+
 
 .HeaderAddressMain {
 font-size: 3.5rem;

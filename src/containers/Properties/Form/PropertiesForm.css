@@ -10,7 +10,7 @@
 
 .Form {
     width: 100%;
-    height: 10rem;
+    height: 10rem;   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +19,21 @@
 .FormGroup {
     width: 25%;
     margin: 0 2rem;
+    
 }
+
+@media screen and (max-width: 940px) {
+    .Form{
+      justify-content: space-between;
+    }
+
+    .FormGroup {
+        margin: 0 1rem;
+        width: 30%;
+    }
+}
+
+
 
 .Title {
     text-transform: uppercase;
@@ -31,7 +45,7 @@
 
 .InputField {
    /* width: 17rem;*/
-    width: 55%;
+    width: 10rem;
     height: 3.7rem;
     border-radius: 1px;
     border: none;
@@ -57,5 +71,66 @@
 .Input label {
     font-size: 1.2rem;
     color: var(--color-white);   
+}
+
+@media screen and (max-width: 856px) {
+    .FormGroup {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Input {
+        margin: 1rem 3rem;
+        width: 35%;
+        padding: 0 1.5rem;
+    }
+
+    .Title {
+        transform: translateY(-3rem)
+    }
+
+    .Form {
+        flex-direction: column;
+        transform: translateY(-3rem);
+        width: 100%;
+   
+    }
+
+    .FormContainer {
+        height: 30vh;
+    }
+
+    .InputField {
+        height: 3rem;
+        width: 12rem;
+    }   
+}
+
+@media screen and (max-width: 540px) {
+
+    .Form {
+        transform: translateY(-11rem);
+    }
+
+    .Title {
+        transform: translateY(-11rem)
+    }
+
+    .FormGroup {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FormContainer {
+        height: 50vh;
+    }
+
+    .Input {
+        padding: 0 .5rem;
+        width: 50%;
+    }
+
+    
 }
 

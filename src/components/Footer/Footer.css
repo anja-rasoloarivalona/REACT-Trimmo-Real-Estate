@@ -104,3 +104,54 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+    .SiteMap {
+        display: none;
+    }
+
+    .RecentProperty {
+        margin-left: 7rem;
+        transform: translateX(-6rem);
+    }
+
+    .Trimmo p {
+        transform: translateY(-10rem);
+    }
+
+    .Logo {
+        transform: translateY(-6rem) translateX(-3rem); 
+    }
+
+    .Footer {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Footer {
+        flex-direction: column;
+    }
+
+    .SocialMedia {
+        transform: translateY(-9rem) translateX(-1rem);
+    }
+
+    .Trimmo {
+        margin-top: 2rem;
+    }
+
+    .Trimmo p {
+        transform: translateY(-10rem) translateX(-4rem);
+        width: 85%;
+    }
+
+    .Logo {
+        transform: translateY(-6rem) translateX(-9rem); 
+    }
+
+    .RecentProperty {
+        margin-left: 7rem;
+        transform: translateX(-6rem) translateY(-6rem) ;
+    }
+}
+
