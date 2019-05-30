@@ -7,10 +7,18 @@
 }
 
 .PropertiesIntro {
-    transform: translateX(8.5rem);
+    width: 100%;
     margin-bottom: 6rem;
 }
 
+
+@media screen and (max-width: 616px) {
+    .PropertiesIntro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
 .PropertiesIntroPara {
     font-size: 1.3rem;
