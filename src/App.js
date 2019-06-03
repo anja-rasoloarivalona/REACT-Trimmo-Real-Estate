@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import Navbar from './components/Navbar/Navbar';
@@ -21,9 +21,12 @@ class App extends Component {
 
       <Layout>
             <Navbar />
+            <Switch>
               <Route exact path="/" component={Home}></Route>
               <Route path="/properties" component={Properties}></Route>
               <Route path="/details/:id" render={props => <Details {...props}/>}></Route>
+              <Route component={Home}/>
+            </Switch>
             <Footer />
       </Layout>
     )
