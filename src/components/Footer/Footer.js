@@ -67,9 +67,6 @@ class Footer extends Component {
                     <NavLink  to='/' className={classes.Link}>
                         Home
                     </NavLink >
-                    <NavLink  to='/about' className={classes.Link}>
-                        About
-                    </NavLink >
                     <NavLink  to='/properties' className={classes.Link}>
                         Properties
                     </NavLink >
