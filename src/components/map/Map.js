@@ -50,6 +50,32 @@ class Map extends Component {
 
         let markerInfos = [...this.props.products];
 
+        markerInfos = markerInfos.filter(item => {      
+          if(this.props.searchedProduct.type == 'All types') {
+                      return item.info.type !== ''
+              } else {
+                      return item.info.type == this.props.searchedProduct.type
+                  }    
+          })
+
+
+        markerInfos = markerInfos.filter(item => {
+          return item.info.baths > (this.props.searchedProduct.bath - 1)
+      })
+
+
+      markerInfos = markerInfos.filter(item => {
+          return item.info.beds > (this.props.searchedProduct.bed - 1)
+      })
+
+      markerInfos = markerInfos.filter(item => {
+          return item.info.price > this.props.searchedProduct.min 
+      })
+
+      markerInfos = markerInfos.filter(item => {
+          return item.info.price < this.props.searchedProduct.max
+      })
+
         // Create an InfoWindow
          let infoWindow = new window.google.maps.InfoWindow();
 

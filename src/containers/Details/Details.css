@@ -68,11 +68,18 @@ color: var(--color-white);
 .Main {
     height: 80vh;
     grid-row: 2 / 3;
-    grid-column: 2 / 3;
+    grid-column: 1 / -1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 1169px) {
+    .Main {
+      height: 100%;
+      flex-direction: column;
+    }
+  }
 
 
 .Gallery {
@@ -88,10 +95,26 @@ color: var(--color-white);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
-  
+    justify-content: center; 
 }
+
+@media screen and (max-width: 1169px) {
+    .Summary {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .Summary {
+      width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .Summary {
+      width: 80%;
+    }
+  }
 
 .SummaryDetails{
     display: flex;
@@ -127,22 +150,42 @@ color: var(--color-white);
     height: 50vh;
     grid-row: 3 / 4;
     grid-column: 2 / 3;
-    margin-top: 6rem;
     display: flex;
-    margin-left: 8rem;
- 
-    
+    margin-left: 8rem;   
 }
+
+@media screen and (max-width: 1169px) {
+    .PropertyDetail  {
+      margin-left: 3rem;
+    }
+}
+ 
 
 .Desc {
-    width: 95%;
-
-    
+    width: 95%;   
 }
+
+@media screen and (max-width: 875px) {
+    .PropertyDetail  {
+     flex-direction: column;
+     height: 100%;
+    }
+
+    .Desc {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 621px) {
+    .Desc {
+        width: 100%;
+    }
+  }
 
 
 .PropertyDetailPara {
     margin-bottom: 3rem;
+    margin-top: 2rem;
     font-size: 1.1rem;
 }
 
@@ -153,22 +196,41 @@ color: var(--color-white);
     margin-left: 6rem;
 }
 
+@media screen and (max-width: 875px) {
+    .FloorPlan   {
+        margin-left: 0
+    }
+  }
+
 .FloorPlanImg {
     width: 60%;
     object-fit: cover;
 }
 
+@media screen and (max-width: 1169px) {
+    .FloorPlanImg  {
+      width: 80%;
+    }
+  }
+
+
+
 .PropertyFeatures {
     grid-row: 4 / 5;
     grid-column: 2 / 3;
-    margin-top: 6rem;
     margin-left: 8rem;
-    height: 80vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 6rem;
-
 }
+
+@media screen and (max-width: 1169px) {
+    .PropertyFeatures   {
+        margin-left: 3rem;
+    }
+}
+
+ 
 
 
 
@@ -183,9 +245,14 @@ color: var(--color-white);
     align-self: center;
     grid-gap: 5rem;
     margin-top: 3rem;
-
-
 }
+
+@media screen and (max-width: 931px) {
+    .PropertyFeaturesList   {
+        width: 100%
+    }
+  }
+
 
 .PropertyFeaturesListIcon div svg{
     height: 1.3rem;
@@ -212,47 +279,81 @@ color: var(--color-white);
     
 }
 
-.PropertyFeaturesListItem div:last-child {
 
-}
 
 
 .PropertyRealtor {
     grid-row: 5 / 6;
     grid-column: 2 / 3;   
     margin-left: 8rem;
-    margin-bottom: 10rem;
-    height: 78vh;
+    margin-bottom: 6rem;
+    margin-top: 4rem;
+    height: 80%;
 
 }
+
+@media screen and (max-width: 1169px) {
+    .PropertyRealtor {
+        margin-left: 3rem;
+    }
+}
+
+
 
 .PropertyRealtorContact {
     display: flex;   
-    align-items: flex-end;
-    justify-content: space-around;
-    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
 }
+
+@media screen and (max-width: 1069px) {
+    .PropertyRealtorContact {
+        display: flex;   
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+}
+
+@media screen and (max-width: 816px) {
+    .PropertyRealtorContact{
+        height: 80vh;
+    }
+
+}
+
+
+
+
 
 .Realtor {
-    width: 26rem;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
 }
 
-.RealtorImgContainer {
-    position: relative;
-}
 
 .RealtorImg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 100%;
+    width: 60%;
     object-fit: cover;
 }
 
+@media screen and (max-width: 1069px) {
+    .RealtorImg{
+        width: 80%;
+    }
+
+}
+
 .RealtorDetails {
-    width: 100%;
+    width: 80%;
     height: 8rem;
     background: var(--color-secondary);
     display: flex;
@@ -260,6 +361,20 @@ color: var(--color-white);
     align-items: center;
     justify-content: center;
     border-radius: 3px;
+}
+
+@media screen and (max-width: 558px) {
+    .RealtorDetails{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 416px) {
+    .RealtorDetails{
+        width: 120%;
+    }
+
 }
 
 .RealtorDetails div:first-child {
@@ -283,8 +398,15 @@ color: var(--color-white);
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 40%;
+    width: 50%;
     background: var(--color-secondary);
+}
+
+@media screen and (max-width: 1069px) {
+    .Form{
+        width: 80%;
+    }
+
 }
 
 .Input {   

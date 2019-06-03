@@ -98,7 +98,7 @@
     }
 
     .FormContainer {
-        height: 30vh;
+        height: 23vh;
     }
 
     .InputField {
@@ -123,14 +123,28 @@
     }
 
     .FormContainer {
-        height: 50vh;
+        height: 34vh;
     }
 
     .Input {
-        padding: 0 .5rem;
-        width: 50%;
+        width: 60%;
+    }
+
+    .InputField {
+        width: 20rem;
     }
 
     
 }
+
+
+@media screen and (max-width: 437px) {
+
+    .Input {
+        width: 80%;
+    }
+
+    
+}
+
 

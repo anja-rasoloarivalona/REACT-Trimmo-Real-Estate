@@ -8,6 +8,8 @@
 }
 
 
+
+
 .PropertiesTitleContainer {
     display: flex;
     flex-direction: column;
@@ -67,7 +69,7 @@
 }
 
 .PropertiesContainer {
-    grid-column: 2 / 3;
+    grid-column: 1 / -1;
     display: grid;
     
 }
@@ -76,4 +78,17 @@
     padding: 0 10.5rem;
     margin: 3rem 0;
 }
+
+@media screen and (max-width: 657px) {
+
+    .MapContainer  {
+        padding: 0;
+      
+    }
+
+    
+}
+
+
+
 

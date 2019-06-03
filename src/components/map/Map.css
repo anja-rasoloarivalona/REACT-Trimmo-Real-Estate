@@ -2,6 +2,14 @@
     height: 60vh;
 }
 
-.info {
-    background: red;
-  }
+
+
+
+@media screen and (max-width: 657px) {
+
+    .Map {
+        width: 100%;
+    }
+
+    
+}

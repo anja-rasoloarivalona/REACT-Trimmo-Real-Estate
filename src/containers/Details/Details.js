@@ -156,9 +156,9 @@ class Details extends Component {
                   <section className={classes.PropertyRealtorContact}>
 
                         <div className={classes.Realtor}>
-                              <div className={classes.RealtorImgContainer}>
-                                    <img alt='realtor' className={classes.RealtorImg} src={realtor1}/>
-                              </div>
+            
+                              <img alt='realtor' className={classes.RealtorImg} src={realtor1}/>
+                          
                               <div className={classes.RealtorDetails}>
                                     <div>JONH DOE</div>
                                     <div>Sales Executive</div>

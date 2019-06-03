@@ -41,11 +41,9 @@
     line-height: 1.5;
 }
 
-.PropertiesCTA {
-    align-self: center;
-}
 
-.PropertiesCTA button {
+
+.PropertiesCTA {
     border: none;
     padding: 1.5rem 2rem;
     outline: none;
@@ -54,5 +52,6 @@
     margin-top: 3rem;
     margin-bottom: 9rem;
     cursor: pointer;
-
+    align-self: center;
+    text-decoration: none;
 }

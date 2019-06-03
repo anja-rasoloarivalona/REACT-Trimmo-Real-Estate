@@ -53,6 +53,8 @@ class PropertiesList extends Component {
         })
 
 
+        
+
         let count = properties.length;
         
         this.props.onRequestCount(count);

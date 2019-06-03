@@ -13,7 +13,7 @@ export const initialState = {
         bath: 1,
         bed: 1
     }
-}
+    }
 
 
 const reducer = (state = initialState, action) => {

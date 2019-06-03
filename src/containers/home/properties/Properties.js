@@ -3,6 +3,7 @@ import classes from './Properties.css';
 import Title from '../../../components/UI/Title/Title';
 import { connect } from 'react-redux';
 import Property from '../../../components/PropertiesList/Property/Property';
+import { Link } from 'react-router-dom';
 
 
 
@@ -40,9 +41,9 @@ class Properties extends Component {
                </div>
     
     
-                <div className={classes.PropertiesCTA}>
-                    <button>MORE PROPERTIES</button>
-                </div>
+                <Link className={classes.PropertiesCTA} to='/properties'>
+                    MORE PROPERTIES
+                </Link>
             </section>
         )
         
