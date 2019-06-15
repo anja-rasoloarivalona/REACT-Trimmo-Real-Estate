@@ -9,7 +9,7 @@ import Form from '../home/form/Form';
 
 import History from '../../shared/history';
 
-import bg from '../../assets/img/bg.jpg';
+
 import Gallery from './Gallery/Gallery';
 
 import map from '../../assets/img/map.jpg';
