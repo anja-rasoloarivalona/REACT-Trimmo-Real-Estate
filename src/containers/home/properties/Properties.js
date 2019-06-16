@@ -4,6 +4,7 @@ import Title from '../../../components/UI/Title/Title';
 import { connect } from 'react-redux';
 import Property from '../../../components/PropertiesList/Property/Property';
 import { Link } from 'react-router-dom';
+import * as actionTypes from '../../../store/actions';
 
 
 
@@ -59,4 +60,10 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps)(Properties);
+const mapDispatchToProps = dispatch => {
+    return {
+        onRequestedId: (item) => dispatch({type: actionTypes.GET_ITEM, payload: item}),
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Properties);
